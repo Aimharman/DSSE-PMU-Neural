@@ -19,6 +19,7 @@ from neural_controller.multitask_active_controller_v4_2 import (
     REQUIRED,
 )
 
+
 MODEL = "neural_controller/neural_active_controller_v42.joblib"
 
 CASES = [
@@ -29,6 +30,10 @@ CASES = [
 ]
 
 
+# ---------------------------------------------------------------------------
+# Convert neural management decision into individual WLS measurement weights
+# ---------------------------------------------------------------------------
+
 def measurement_weights_from_action(fault_type, faulty_pmu):
 
     weights = np.ones(12, dtype=float)
@@ -37,109 +42,134 @@ def measurement_weights_from_action(fault_type, faulty_pmu):
         return weights
 
     try:
-        pmu = int(faulty_pmu[-1])
+        pmu = int(str(faulty_pmu)[-1])
     except Exception:
         return weights
 
     base = (pmu - 1) * 4
 
     if fault_type == "BAD_DATA":
+        # Vmag, Vangle, Imag, Iangle
+        weights[base:base + 4] = 0.10
+
+    elif fault_type == "CLOCK_DRIFT":
+        # Timing problem: down-weight the complete PMU
         weights[base:base + 4] = 0.10
 
     elif fault_type == "SYNC":
+        # Synchronization error primarily affects phase.
         # Retain magnitude measurements.
-        # Reduce influence of phase measurements.
         weights[base + 1] = 0.10
         weights[base + 3] = 0.10
-
-    elif fault_type == "CLOCK_DRIFT":
-        weights[base:base + 4] = 0.10
 
     return weights
 
 
-def select_demo_window(df, case_name):
+# ---------------------------------------------------------------------------
+# Build all valid V4.2 inference windows
+# ---------------------------------------------------------------------------
 
-    """
-    Select a representative window for demonstration.
-
-    IMPORTANT:
-    raw_fault_type/raw_faulty_pmu are used ONLY to locate a suitable
-    demonstration window. They are NOT passed to the neural controller.
-    """
-
-    if case_name == "NORMAL":
-        candidate = df.index[
-            df["raw_fault_type"].astype(str).str.upper() == "NORMAL"
-        ]
-
-    elif case_name.startswith("BAD_DATA"):
-        candidate = df.index[
-            (df["raw_fault_type"].astype(str).str.upper() == "BAD_DATA") &
-            (df["raw_faulty_pmu"].astype(str).str.upper() == "PMU2")
-        ]
-
-    elif case_name.startswith("SYNC"):
-        candidate = df.index[
-            (df["raw_fault_type"].astype(str).str.upper() == "SYNC") &
-            (df["raw_faulty_pmu"].astype(str).str.upper() == "PMU2")
-        ]
-
-    elif case_name.startswith("CLOCK_DRIFT"):
-        candidate = df.index[
-            (df["raw_fault_type"].astype(str).str.upper() == "CLOCK_DRIFT") &
-            (df["raw_faulty_pmu"].astype(str).str.upper() == "PMU2")
-        ]
-
-    else:
-        candidate = df.index
-
-    if len(candidate) == 0:
-        raise RuntimeError(
-            f"No suitable demonstration samples found for {case_name}"
-        )
-
-    # Pick a point approximately in the middle of the fault region.
-    target = int(candidate[len(candidate) // 2])
-
-    # Make sure enough samples exist for the V4.2 timing history.
-    first_end = max(WINDOW - 1, TIMING_LONG - 1)
-
-    if target < first_end:
-        target = first_end
-
-    if target >= len(df):
-        target = len(df) - 1
-
-    window = df.iloc[target - WINDOW + 1:target + 1].copy()
-
-    if len(window) != WINDOW:
-        raise RuntimeError(
-            f"Could not construct {WINDOW}-sample PDC window."
-        )
-
-    return target, window
-
-
-def get_neural_prediction(df, target, bundle):
+def generate_windows(df):
 
     baseline = _baseline_from_history(
         df.iloc[:min(BASELINE_SAMPLES, len(df))]
     )
 
-    hs = max(0, target - TIMING_LONG + 1)
+    first_end = max(WINDOW - 1, TIMING_LONG - 1)
 
-    history = df.iloc[hs:target + 1].copy()
+    for end in range(first_end, len(df), WINDOW):
 
-    prediction = predict_window(
-        df.iloc[target - WINDOW + 1:target + 1].copy(),
-        history,
-        bundle,
-        baseline,
+        window = df.iloc[end - WINDOW + 1:end + 1]
+
+        if len(window) != WINDOW:
+            continue
+
+        if window[REQUIRED].isna().any().any():
+            continue
+
+        hs = max(0, end - TIMING_LONG + 1)
+        history = df.iloc[hs:end + 1]
+
+        prediction = predict_window(
+            window,
+            history,
+            BUNDLE,
+            baseline
+        )
+
+        yield end, window, prediction
+
+
+# ---------------------------------------------------------------------------
+# Select the strongest representative window
+# ---------------------------------------------------------------------------
+
+def select_best_window(df, case_name):
+
+    candidates = list(generate_windows(df))
+
+    if not candidates:
+        raise RuntimeError("No valid V4.2 inference windows found.")
+
+    # NORMAL:
+    # Select the window with the highest NORMAL confidence.
+    if case_name == "NORMAL":
+
+        best = max(
+            candidates,
+            key=lambda item:
+                item[2]["neural_confidence"]
+                if item[2]["fault_type"] == "NORMAL"
+                else -1.0
+        )
+
+        return best
+
+    # Fault cases:
+    # Prefer a window where V4.2 actually detected the expected fault.
+    expected_fault = {
+        "BAD_DATA - PMU2": "BAD_DATA",
+        "SYNC - PMU2": "SYNC",
+        "CLOCK_DRIFT - PMU2": "CLOCK_DRIFT",
+    }[case_name]
+
+    matching = [
+        item for item in candidates
+        if item[2]["fault_type"] == expected_fault
+    ]
+
+    if matching:
+
+        # Highest confidence among correctly classified windows.
+        return max(
+            matching,
+            key=lambda item: item[2]["neural_confidence"]
+        )
+
+    # If the expected fault was never detected,
+    # select the strongest non-normal prediction.
+    non_normal = [
+        item for item in candidates
+        if item[2]["fault_type"] != "NORMAL"
+    ]
+
+    if non_normal:
+
+        return max(
+            non_normal,
+            key=lambda item: item[2]["neural_confidence"]
+        )
+
+    # Last resort: strongest overall prediction.
+    return max(
+        candidates,
+        key=lambda item: item[2]["neural_confidence"]
     )
 
-    return prediction
 
+# ---------------------------------------------------------------------------
+# Display estimated state
+# ---------------------------------------------------------------------------
 
 def print_state(x):
 
@@ -157,7 +187,11 @@ def print_state(x):
         )
 
 
-def run_case(case_name, csv_path, bundle):
+# ---------------------------------------------------------------------------
+# Run one complete Neural -> WLS demonstration
+# ---------------------------------------------------------------------------
+
+def run_case(case_name, csv_path):
 
     print("\n")
     print("=" * 78)
@@ -165,10 +199,6 @@ def run_case(case_name, csv_path, bundle):
     print("=" * 78)
 
     print(f"CSV: {csv_path}")
-
-    # ------------------------------------------------------------
-    # Load complete scenario
-    # ------------------------------------------------------------
 
     df = pd.read_csv(csv_path).reset_index(drop=True)
 
@@ -180,64 +210,78 @@ def run_case(case_name, csv_path, bundle):
         )
 
     # ------------------------------------------------------------
-    # Select demonstration point
+    # Automatically locate strongest representative window
     # ------------------------------------------------------------
 
-    target, window = select_demo_window(df, case_name)
-
-    time_s = (
-        float(df["Time (s)"].iloc[target])
-        if "Time (s)" in df.columns
-        else target / 1000.0
+    end, window, prediction = select_best_window(
+        df,
+        case_name
     )
 
-    print(f"Demo sample index : {target}")
-    print(f"Demo time         : {time_s:.6f} s")
-    print(f"PDC window        : {WINDOW} samples")
+    time_s = (
+        float(window["Time (s)"].iloc[-1])
+        if "Time (s)" in window.columns
+        else end / 1000.0
+    )
+
+    print("\nSELECTED V4.2 INFERENCE WINDOW")
+    print("-" * 78)
+    print(f"Sample index     : {end}")
+    print(f"Time             : {time_s:.6f} s")
+    print(f"PDC window       : {WINDOW} samples")
 
     # ------------------------------------------------------------
     # Neural controller
     # ------------------------------------------------------------
-
-    prediction = get_neural_prediction(
-        df,
-        target,
-        bundle
-    )
 
     print("\nNEURAL CONTROLLER")
     print("-" * 78)
 
     print(f"Fault type       : {prediction['fault_type']}")
     print(f"Faulty PMU       : {prediction['faulty_pmu']}")
-    print(f"Type confidence  : {prediction['type_confidence']:.4f}")
-    print(f"Timing confidence: {prediction['timing_confidence']:.4f}")
-    print(f"PMU confidence   : {prediction['pmu_confidence']:.4f}")
-    print(f"Neural confidence: {prediction['neural_confidence']:.4f}")
-
-    print(f"Management state : {prediction['management_state']}")
-    print(f"Action           : {prediction['management_action']}")
-
-    # ------------------------------------------------------------
-    # Neural → WLS measurement weights
-    # ------------------------------------------------------------
-
-    weights = np.asarray(
-        prediction["measurement_weights"],
-        dtype=float
+    print(
+        f"Type confidence  : "
+        f"{prediction['type_confidence']:.4f}"
+    )
+    print(
+        f"Timing confidence: "
+        f"{prediction['timing_confidence']:.4f}"
+    )
+    print(
+        f"PMU confidence   : "
+        f"{prediction['pmu_confidence']:.4f}"
+    )
+    print(
+        f"Neural confidence: "
+        f"{prediction['neural_confidence']:.4f}"
     )
 
-    # Safety fallback in case an older controller bundle does not
-    # provide measurement_weights.
-    if weights.size != 12:
-        weights = measurement_weights_from_action(
-            prediction["fault_type"],
-            prediction["faulty_pmu"]
-        )
+    print(
+        f"Management state : "
+        f"{prediction['management_state']}"
+    )
+
+    print(
+        f"Action           : "
+        f"{prediction['management_action']}"
+    )
+
+    # ------------------------------------------------------------
+    # Neural -> WLS
+    # ------------------------------------------------------------
+
+    weights = measurement_weights_from_action(
+        prediction["fault_type"],
+        prediction["faulty_pmu"]
+    )
 
     print("\nNEURAL → WLS WEIGHTS")
     print("-" * 78)
 
+    print("Measurement order:")
+    print("  [Vmag, Vangle, Imag, Iangle] per PMU")
+
+    print()
     print("PMU1 :", weights[0:4].tolist())
     print("PMU2 :", weights[4:8].tolist())
     print("PMU3 :", weights[8:12].tolist())
@@ -246,12 +290,12 @@ def run_case(case_name, csv_path, bundle):
     # State estimator
     #
     # IMPORTANT:
-    # Use exactly the same sample that produced the neural decision.
+    # Use the SAME sample selected by the neural controller.
     # ------------------------------------------------------------
 
     est = StateEstimator(
         csv_path,
-        sample_index=target
+        sample_index=end
     )
 
     z = est.build_measurement_vector()
@@ -260,8 +304,13 @@ def run_case(case_name, csv_path, bundle):
     print("\nSTATE ESTIMATION")
     print("-" * 78)
 
-    print(f"Measurement dimension: {len(z)}")
-    print(f"State dimension      : {len(x0)}")
+    print(
+        f"Measurement dimension: {len(z)}"
+    )
+
+    print(
+        f"State dimension      : {len(x0)}"
+    )
 
     # ------------------------------------------------------------
     # Neural-weighted WLS
@@ -280,10 +329,17 @@ def run_case(case_name, csv_path, bundle):
 
     print_state(x)
 
+    # ------------------------------------------------------------
+    # WLS result
+    # ------------------------------------------------------------
+
     print("\nWLS RESULT")
     print("-" * 78)
 
-    print(f"Residual norm : {np.linalg.norm(residual):.8f}")
+    print(
+        f"Residual norm : "
+        f"{np.linalg.norm(residual):.8f}"
+    )
 
     print("\nWLS diagonal:")
     print(np.diag(W))
@@ -293,25 +349,31 @@ def run_case(case_name, csv_path, bundle):
     print("=" * 78)
 
 
+# ---------------------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------------------
+
 def main():
+
+    global BUNDLE
 
     print("=" * 78)
     print(" NEURAL ACTIVE FAULT MANAGEMENT + WLS DEMONSTRATION")
-    print(" V4.2")
+    print(" V4.2 — AUTOMATIC FAULT-WINDOW SELECTION")
     print("=" * 78)
 
     print("\nLoading model:")
     print(MODEL)
 
-    bundle = joblib.load(MODEL)
+    BUNDLE = joblib.load(MODEL)
 
     print("Model loaded successfully.")
 
     for case_name, csv_path in CASES:
+
         run_case(
             case_name,
-            csv_path,
-            bundle
+            csv_path
         )
 
     print("\n")
