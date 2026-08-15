@@ -1,5 +1,7 @@
 {
-  "windows": 5970,
+  "windows": 5700,
+  "train_windows": 3420,
+  "test_windows": 2280,
   "type_classes": [
     "BAD_DATA",
     "CLOCK_DRIFT",
@@ -10,5 +12,53 @@
     "PMU1",
     "PMU2",
     "PMU3"
-  ]
+  ],
+  "model": "two-stage MLP(32,16)",
+  "feature_count": 119,
+  "type_confusion_matrix": [
+    [
+      215,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      250,
+      8,
+      0
+    ],
+    [
+      0,
+      4,
+      1300,
+      1
+    ],
+    [
+      69,
+      240,
+      55,
+      137
+    ]
+  ],
+  "pmu_confusion_matrix": [
+    [
+      273,
+      2,
+      1
+    ],
+    [
+      0,
+      511,
+      0
+    ],
+    [
+      0,
+      0,
+      188
+    ]
+  ],
+  "activation_windows": 2,
+  "recovery_windows": 3,
+  "confidence_threshold": 0.7
 }
