@@ -1,0 +1,14 @@
+{
+  "windows": 5970,
+  "type_classes": [
+    "BAD_DATA",
+    "CLOCK_DRIFT",
+    "NORMAL",
+    "SYNC"
+  ],
+  "pmu_classes": [
+    "PMU1",
+    "PMU2",
+    "PMU3"
+  ]
+}

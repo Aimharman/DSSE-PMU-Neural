@@ -1,0 +1,11 @@
+{
+  "windows": 5970,
+  "classes": [
+    "ACCEPT",
+    "DOWNWEIGHT_PMU1",
+    "DOWNWEIGHT_PMU2",
+    "DOWNWEIGHT_PMU3"
+  ],
+  "test_windows": 2388,
+  "model": "MLP(32,16)"
+}
