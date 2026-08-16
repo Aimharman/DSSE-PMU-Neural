@@ -22,6 +22,7 @@ from measurement_model import (
 
 from jacobian import compute_jacobian
 from network_model import NUM_BUSES
+from chi_squared_test import ChiSquaredTest
 
 
 ###########################################################################
@@ -382,6 +383,38 @@ class WeightedLeastSquares:
             )
 
         ###################################################################
+        # Chi-squared test
+        ###################################################################
+
+        print("\n==============================================")
+        print(" Chi-Squared Test (Bad Data Detection)")
+        print("==============================================")
+
+        R = self._build_covariance_matrix()
+        R_inv = np.linalg.inv(R)
+
+        chi2_tester = ChiSquaredTest(confidence_level=0.95)
+        chi2_result = chi2_tester.test_for_bad_data(
+            r,
+            R_inv,
+            len(z),
+            len(x)
+        )
+
+        print(f"Test Statistic (J2)     : {chi2_result['test_statistic']:.8f}")
+        print(f"Critical Value          : {chi2_result['critical_value']:.8f}")
+        print(f"Degrees of Freedom      : {chi2_result['degrees_of_freedom']}")
+        print(f"P-value                 : {chi2_result['p_value']:.6f}")
+        print(f"Bad Data Detected       : {chi2_result['bad_data_detected']}")
+        print(f"Confidence (1-p)        : {chi2_result['confidence']:.6f}")
+
+        # Check for suspect measurements
+        suspect = chi2_tester.identify_suspect_measurements(r, R_inv)
+        if suspect["count"] > 0:
+            print(f"\nSuspect Measurements    : {suspect['count']}")
+            print(f"Indices                 : {suspect['indices']}")
+
+        ###################################################################
         # Final state
         ###################################################################
 
@@ -396,4 +429,5 @@ class WeightedLeastSquares:
             r,
             W,
             active_indices,
+            chi2_result,
         )
