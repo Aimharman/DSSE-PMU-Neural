@@ -1,0 +1,51 @@
+{
+  "feature_count": 52,
+  "classes": [
+    "NORMAL",
+    "BAD_DATA",
+    "SYNC",
+    "CLOCK_DRIFT"
+  ],
+  "faulty_pmu_classes": [
+    1,
+    2,
+    3
+  ],
+  "training_scenarios": [
+    "normal_r02.csv",
+    "normal_r03.csv",
+    "PMU1_bad_data_r03.csv",
+    "PMU1_bad_data_r01.csv",
+    "PMU2_bad_data_r02.csv",
+    "PMU2_bad_data_r01.csv",
+    "PMU3_bad_data_r02.csv",
+    "PMU3_bad_data_r03.csv",
+    "PMU1_sync_r03.csv",
+    "PMU1_sync_r01.csv",
+    "PMU2_sync_r02.csv",
+    "PMU2_sync_r01.csv",
+    "PMU3_sync_r02.csv",
+    "PMU3_sync_r03.csv",
+    "PMU1_clock_drift_r03.csv",
+    "PMU1_clock_drift_r01.csv",
+    "PMU2_clock_drift_r02.csv",
+    "PMU2_clock_drift_r01.csv",
+    "PMU3_clock_drift_r02.csv",
+    "PMU3_clock_drift_r03.csv"
+  ],
+  "validation_scenarios": [
+    "normal_r01.csv",
+    "PMU1_bad_data_r02.csv",
+    "PMU2_bad_data_r03.csv",
+    "PMU3_bad_data_r01.csv",
+    "PMU1_sync_r02.csv",
+    "PMU2_sync_r03.csv",
+    "PMU3_sync_r01.csv",
+    "PMU1_clock_drift_r02.csv",
+    "PMU2_clock_drift_r03.csv",
+    "PMU3_clock_drift_r01.csv"
+  ],
+  "sklearn_version": "1.4.1.post1",
+  "random_seed": 42,
+  "validation_accuracy": 0.9530927835051546
+}
