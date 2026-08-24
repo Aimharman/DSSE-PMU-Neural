@@ -1,0 +1,2418 @@
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[0.95695832 0.2251775  0.87577909]
+
+Residual Norm
+3.0062103784935315
+
+Correction Norm
+0.004203250880759429
+
+Iteration 2
+
+Current Magnitudes
+[0.76808764 0.42465081 1.093242  ]
+
+Residual Norm
+1.8244239650826564
+
+Correction Norm
+0.006617451749149896
+
+Iteration 3
+
+Current Magnitudes
+[0.75564335 0.33152357 1.08662351]
+
+Residual Norm
+0.6191543194907183
+
+Correction Norm
+0.004617361981078614
+
+Iteration 4
+
+Current Magnitudes
+[0.78941033 0.25579812 1.04064735]
+
+Residual Norm
+0.22721464840040728
+
+Correction Norm
+0.0017287899829265911
+
+Iteration 5
+
+Current Magnitudes
+[0.79043435 0.24983667 1.03809321]
+
+Residual Norm
+0.06068512054595435
+
+Correction Norm
+0.0002749231806929816
+
+Iteration 6
+
+Current Magnitudes
+[0.7907231  0.24930249 1.03781112]
+
+Residual Norm
+0.010609187708804377
+
+Correction Norm
+1.022418823361812e-05
+
+Iteration 7
+
+Current Magnitudes
+[0.79072024 0.2493069  1.03781281]
+
+Residual Norm
+0.010878761148761722
+
+Correction Norm
+1.249368868526989e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.790749
+Predicted Current Magnitude : 0.790720
+Measured Current Angle      : -73.083956 deg
+Predicted Current Angle     : -72.808182 deg
+
+Bus 2
+Measured Current Magnitude  : 0.253784
+Predicted Current Magnitude : 0.249307
+Measured Current Angle      : -64.124683 deg
+Predicted Current Angle     : -64.046373 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042117
+Predicted Current Magnitude : 1.037813
+Measured Current Angle      : 109.599753 deg
+Predicted Current Angle     : 109.288884 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 0.26180158
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.999661
+Bad Data Detected       : False
+Confidence (1-p)        : 0.000339
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00566171 -1.57004929  1.00048479 -1.60492508  0.997859   -1.63966575]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[2.71828178 2.74484001 1.53460659]
+
+Residual Norm
+12.545814860527663
+
+Correction Norm
+0.27515964002934434
+
+Iteration 2
+
+Current Magnitudes
+[2.74438068 0.72964105 2.01744259]
+
+Residual Norm
+3.6912314363117043
+
+Correction Norm
+0.09981216041756587
+
+Iteration 3
+
+Current Magnitudes
+[2.33813765 2.14075614 1.51989689]
+
+Residual Norm
+3.7640734275234387
+
+Correction Norm
+0.06363149370959484
+
+Iteration 4
+
+Current Magnitudes
+[1.72160693 0.50377668 2.18067978]
+
+Residual Norm
+3.119105320125765
+
+Correction Norm
+0.043723782126336236
+
+Iteration 5
+
+Current Magnitudes
+[1.627982   0.09460906 1.6409262 ]
+
+Residual Norm
+1.5229460297227517
+
+Correction Norm
+0.018584733288421047
+
+Iteration 6
+
+Current Magnitudes
+[1.53247313 0.23194198 1.70794174]
+
+Residual Norm
+1.9039938287108564
+
+Correction Norm
+0.0037453863763805217
+
+Iteration 7
+
+Current Magnitudes
+[1.54637412 0.19970119 1.70314135]
+
+Residual Norm
+1.3532916778012651
+
+Correction Norm
+0.004652133579299872
+
+Iteration 8
+
+Current Magnitudes
+[1.59185602 0.09537895 1.65713365]
+
+Residual Norm
+1.1432871964802143
+
+Correction Norm
+0.003778913604024921
+
+Iteration 9
+
+Current Magnitudes
+[1.56623988 0.11184577 1.67665184]
+
+Residual Norm
+1.440158611548699
+
+Correction Norm
+0.0021142465444170403
+
+Iteration 10
+
+Current Magnitudes
+[1.61882799e+00 1.60759033e-03 1.61956058e+00]
+
+Residual Norm
+1.0208142026887992
+
+Correction Norm
+0.0020132206166488076
+
+Iteration 11
+
+Current Magnitudes
+[1.59974191 0.08943195 1.64231553]
+
+Residual Norm
+1.388672972314334
+
+Correction Norm
+0.001368214225567775
+
+Iteration 12
+
+Current Magnitudes
+[1.57250871 0.1026711  1.67290789]
+
+Residual Norm
+1.3688091702327854
+
+Correction Norm
+0.001276507689485327
+
+Iteration 13
+
+Current Magnitudes
+[1.61993562 0.00285233 1.62088787]
+
+Residual Norm
+1.0288682768491493
+
+Correction Norm
+0.001630855778601091
+
+Iteration 14
+
+Current Magnitudes
+[1.59333132 0.15378458 1.64965194]
+
+Residual Norm
+1.7513968378405849
+
+Correction Norm
+0.002380290098099671
+
+Iteration 15
+
+Current Magnitudes
+[1.50550018 0.23396677 1.73702476]
+
+Residual Norm
+1.710357483150928
+
+Correction Norm
+0.003212451636697241
+
+Iteration 16
+
+Current Magnitudes
+[1.61097301 0.07068909 1.6271055 ]
+
+Residual Norm
+1.0610132550654763
+
+Correction Norm
+0.0037683640954033187
+
+Iteration 17
+
+Current Magnitudes
+[1.56920623 0.14768478 1.67536221]
+
+Residual Norm
+1.5579830701102408
+
+Correction Norm
+0.0017410015203514122
+
+Iteration 18
+
+Current Magnitudes
+[1.59064474 0.08421945 1.65917707]
+
+Residual Norm
+1.186463681795343
+
+Correction Norm
+0.0027488475992354716
+
+Iteration 19
+
+Current Magnitudes
+[1.58509203 0.07553146 1.65339982]
+
+Residual Norm
+1.2987294759189085
+
+Correction Norm
+0.001571808300397739
+
+Iteration 20
+
+Current Magnitudes
+[1.61427013 0.01999369 1.62759693]
+
+Residual Norm
+1.0621273218534673
+
+Correction Norm
+0.0012829338000567292
+
+Iteration 21
+
+Current Magnitudes
+[1.58731003 0.07738552 1.65244286]
+
+Residual Norm
+1.4544906074813186
+
+Correction Norm
+0.0010176360472275226
+
+Iteration 22
+
+Current Magnitudes
+[1.59044925 0.06629606 1.64971176]
+
+Residual Norm
+1.2714164988814651
+
+Correction Norm
+0.001156519144265754
+
+Iteration 23
+
+Current Magnitudes
+[1.61242913 0.02039187 1.62806785]
+
+Residual Norm
+1.0698818116558404
+
+Correction Norm
+0.0009833462616740238
+
+Iteration 24
+
+Current Magnitudes
+[1.59389826 0.05651322 1.64642765]
+
+Residual Norm
+1.3605724032407365
+
+Correction Norm
+0.0006362838046679378
+
+Iteration 25
+
+Current Magnitudes
+[1.60519971 0.03622454 1.63395867]
+
+Residual Norm
+1.1701320499732728
+
+Correction Norm
+0.0007886493185917148
+
+Iteration 26
+
+Current Magnitudes
+[1.60609273 0.02868604 1.63477329]
+
+Residual Norm
+1.1402519348884415
+
+Correction Norm
+0.00034257286057828336
+
+Iteration 27
+
+Current Magnitudes
+[1.61876742 0.00499473 1.62066802]
+
+Residual Norm
+1.0501221662690379
+
+Correction Norm
+0.00041583160252995494
+
+Iteration 28
+
+Current Magnitudes
+[1.5985518  0.10505808 1.6430951 ]
+
+Residual Norm
+1.4460616259963297
+
+Correction Norm
+0.0015925399761951096
+
+Iteration 29
+
+Current Magnitudes
+[1.56443018 0.12122675 1.68321252]
+
+Residual Norm
+1.4061855179807963
+
+Correction Norm
+0.001644349582098649
+
+Iteration 30
+
+Current Magnitudes
+[1.61993896 0.00240251 1.62058866]
+
+Residual Norm
+1.027062347149115
+
+Correction Norm
+0.0018525540192765577
+
+Iteration 31
+
+Current Magnitudes
+[1.59684663 0.16865012 1.64703297]
+
+Residual Norm
+1.8061247048049225
+
+Correction Norm
+0.0026178916153773183
+
+Iteration 32
+
+Current Magnitudes
+[1.49083279 0.26678448 1.75216416]
+
+Residual Norm
+1.768310415431646
+
+Correction Norm
+0.0036785709861834395
+
+Iteration 33
+
+Current Magnitudes
+[1.60607088 0.09415518 1.63241549]
+
+Residual Norm
+1.0803348459155913
+
+Correction Norm
+0.004357034648738516
+
+Iteration 34
+
+Current Magnitudes
+[1.55912196 0.14818724 1.68647555]
+
+Residual Norm
+1.518337635982186
+
+Correction Norm
+0.001913262366342316
+
+Iteration 35
+
+Current Magnitudes
+[1.60967972 0.0498996  1.63722498]
+
+Residual Norm
+1.088818437707102
+
+Correction Norm
+0.002797944676552011
+
+Iteration 36
+
+Current Magnitudes
+[1.56940294 0.1096846  1.66930867]
+
+Residual Norm
+1.5519130853705534
+
+Correction Norm
+0.001601723560542558
+
+Iteration 37
+
+Current Magnitudes
+[1.59757454 0.06825814 1.64332995]
+
+Residual Norm
+1.1880334782191677
+
+Correction Norm
+0.0018884668734955807
+
+Iteration 38
+
+Current Magnitudes
+[1.5917873  0.05830963 1.65008633]
+
+Residual Norm
+1.2262809424526744
+
+Correction Norm
+0.0011557518942615554
+
+Iteration 39
+
+Current Magnitudes
+[1.6188123  0.01200636 1.62168778]
+
+Residual Norm
+1.053118268611305
+
+Correction Norm
+0.0011282484420586407
+
+Iteration 40
+
+Current Magnitudes
+[1.59862135 0.13478853 1.64331257]
+
+Residual Norm
+1.5541280986545363
+
+Correction Norm
+0.0022023347679664984
+
+Iteration 41
+
+Current Magnitudes
+[1.54752298 0.16011769 1.70410716]
+
+Residual Norm
+1.4747566690659157
+
+Correction Norm
+0.0024114769981211084
+
+Iteration 42
+
+Current Magnitudes
+[1.62015514 0.00476586 1.62068268]
+
+Residual Norm
+1.026650710104895
+
+Correction Norm
+0.0024369735622719038
+
+Iteration 43
+
+Current Magnitudes
+[1.60677957 0.20418433 1.63876798]
+
+Residual Norm
+1.940933891777999
+
+Correction Norm
+0.0031346429662301254
+
+Iteration 44
+
+Current Magnitudes
+[1.45825909 0.3459197  1.78685323]
+
+Residual Norm
+1.8884691687410304
+
+Correction Norm
+0.004861305221000507
+
+Iteration 45
+
+Current Magnitudes
+[1.59168342 0.15443958 1.64923931]
+
+Residual Norm
+1.130814129825039
+
+Correction Norm
+0.005867787398772287
+
+Iteration 46
+
+Current Magnitudes
+[1.54169104 0.1680597  1.70897355]
+
+Residual Norm
+1.4491835015204213
+
+Correction Norm
+0.0030209974805592366
+
+Iteration 47
+
+Current Magnitudes
+[1.62201267 0.0152287  1.62099911]
+
+Residual Norm
+1.032671104219224
+
+Correction Norm
+0.0031572518602207516
+
+Iteration 48
+
+Current Magnitudes
+[1.61893134 0.20149836 1.62431479]
+
+Residual Norm
+1.7998767135679081
+
+Correction Norm
+0.003849168449974352
+
+Iteration 49
+
+Current Magnitudes
+[1.49934361 0.29606878 1.76200776]
+
+Residual Norm
+1.711948868942137
+
+Correction Norm
+0.004210292094724607
+
+Iteration 50
+
+Current Magnitudes
+[1.6120834  0.08199109 1.64116998]
+
+Residual Norm
+1.0888047780765753
+
+Correction Norm
+0.0049379377650580186
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.936598
+Predicted Current Magnitude : 1.612083
+Measured Current Angle      : -53.166092 deg
+Predicted Current Angle     : -73.513983 deg
+
+Bus 2
+Measured Current Magnitude  : 0.252548
+Predicted Current Magnitude : 0.081991
+Measured Current Angle      : -64.729101 deg
+Predicted Current Angle     : -144.091991 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042009
+Predicted Current Magnitude : 1.641170
+Measured Current Angle      : 109.353702 deg
+Predicted Current Angle     : 103.785468 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 878.19186010
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 10
+Indices                 : [ 0  1  2  3  4  5  7  8  9 10]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.07536484 -1.43581138  1.05554419 -1.50088376  1.04098243 -1.5515318 ]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[3.13042363 3.59809159 0.73561903]
+
+Residual Norm
+18.438515127854686
+
+Correction Norm
+0.23214880137474947
+
+Iteration 2
+
+Current Magnitudes
+[0.99021241 2.56078303 1.62870065]
+
+Residual Norm
+4.797970927494037
+
+Correction Norm
+0.10072583693532772
+
+Iteration 3
+
+Current Magnitudes
+[1.99826961 1.168763   1.41554598]
+
+Residual Norm
+3.527181421778688
+
+Correction Norm
+0.08297967014276761
+
+Iteration 4
+
+Current Magnitudes
+[0.52269117 1.32110999 1.82498425]
+
+Residual Norm
+2.542699246225402
+
+Correction Norm
+0.0755240391965291
+
+Iteration 5
+
+Current Magnitudes
+[0.63821093 0.50221653 1.13539241]
+
+Residual Norm
+1.4151006537066166
+
+Correction Norm
+0.01723422822220736
+
+Iteration 6
+
+Current Magnitudes
+[0.65615666 0.45788903 1.1074097 ]
+
+Residual Norm
+0.3870461074618869
+
+Correction Norm
+0.003133316036275551
+
+Iteration 7
+
+Current Magnitudes
+[0.65350423 0.46149091 1.10688874]
+
+Residual Norm
+0.3435923121191322
+
+Correction Norm
+0.00019322462413713052
+
+Iteration 8
+
+Current Magnitudes
+[0.65474281 0.45903809 1.10581188]
+
+Residual Norm
+0.3416514283181884
+
+Correction Norm
+5.2552445982431494e-05
+
+Iteration 9
+
+Current Magnitudes
+[0.6546427  0.45927116 1.10589166]
+
+Residual Norm
+0.34011839880491773
+
+Correction Norm
+8.414177487487589e-06
+
+Iteration 10
+
+Current Magnitudes
+[0.65468913 0.45917706 1.10585171]
+
+Residual Norm
+0.3401266557991936
+
+Correction Norm
+2.0585118459226124e-06
+
+Iteration 11
+
+Current Magnitudes
+[0.65468319 0.45919008 1.10585663]
+
+Residual Norm
+0.3400761095167057
+
+Correction Norm
+3.841649106910504e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.789466
+Predicted Current Magnitude : 0.654683
+Measured Current Angle      : -71.969655 deg
+Predicted Current Angle     : -72.777981 deg
+
+Bus 2
+Measured Current Magnitude  : 0.293782
+Predicted Current Magnitude : 0.459190
+Measured Current Angle      : -52.599987 deg
+Predicted Current Angle     : -58.803554 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042757
+Predicted Current Magnitude : 1.105857
+Measured Current Angle      : 109.594502 deg
+Predicted Current Angle     : 112.976999 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 513.88156473
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 6
+Indices                 : [0 1 4 5 8 9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.05974853 -1.49892371  1.05331795 -1.52595968  1.04998756 -1.56108885]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[0.24308755 1.23106947 1.46847685]
+
+Residual Norm
+15.204659200349061
+
+Correction Norm
+0.22690464945307323
+
+Iteration 2
+
+Current Magnitudes
+[1.50325697 0.52611788 1.89078286]
+
+Residual Norm
+5.991770993259201
+
+Correction Norm
+0.06256644186752283
+
+Iteration 3
+
+Current Magnitudes
+[1.91363416 0.78941424 1.16062253]
+
+Residual Norm
+5.426970307073157
+
+Correction Norm
+0.025981277695421388
+
+Iteration 4
+
+Current Magnitudes
+[1.53284753 1.09839313 2.43092812]
+
+Residual Norm
+5.042700869878522
+
+Correction Norm
+0.0664441652510173
+
+Iteration 5
+
+Current Magnitudes
+[1.32297489 2.53217629 3.56255364]
+
+Residual Norm
+6.207215829149078
+
+Correction Norm
+0.12381693806219439
+
+Iteration 6
+
+Current Magnitudes
+[0.57828183 1.18776616 1.45016325]
+
+Residual Norm
+6.259486486585889
+
+Correction Norm
+0.07931786956461045
+
+Iteration 7
+
+Current Magnitudes
+[0.69876175 1.9503982  1.26196836]
+
+Residual Norm
+5.406645056045005
+
+Correction Norm
+0.045941678164443576
+
+Iteration 8
+
+Current Magnitudes
+[0.54482668 1.45788825 1.94788091]
+
+Residual Norm
+4.927749565529244
+
+Correction Norm
+0.05843685072858285
+
+Iteration 9
+
+Current Magnitudes
+[2.15896899 1.66901879 3.34573044]
+
+Residual Norm
+6.494061639355295
+
+Correction Norm
+0.12130379847939103
+
+Iteration 10
+
+Current Magnitudes
+[2.23347241 0.64012355 1.72029962]
+
+Residual Norm
+6.211475675635716
+
+Correction Norm
+0.08680860183367813
+
+Iteration 11
+
+Current Magnitudes
+[1.99501671 0.92704609 2.9124245 ]
+
+Residual Norm
+5.244006201743961
+
+Correction Norm
+0.10775336964114515
+
+Iteration 12
+
+Current Magnitudes
+[1.37013012 1.9483369  3.24157002]
+
+Residual Norm
+6.1922292095833384
+
+Correction Norm
+0.11919256782754029
+
+Iteration 13
+
+Current Magnitudes
+[1.38840757 1.62641087 2.09343175]
+
+Residual Norm
+6.072906919213115
+
+Correction Norm
+0.05456035972805642
+
+Iteration 14
+
+Current Magnitudes
+[0.59876612 2.52600488 1.93839038]
+
+Residual Norm
+5.8177934935080735
+
+Correction Norm
+0.06677980322392645
+
+Iteration 15
+
+Current Magnitudes
+[0.46777733 2.04728384 2.48446129]
+
+Residual Norm
+5.315722311247799
+
+Correction Norm
+0.07519671470342122
+
+Iteration 16
+
+Current Magnitudes
+[1.49903563 2.02233517 3.4894073 ]
+
+Residual Norm
+6.281329665042105
+
+Correction Norm
+0.12729188465941477
+
+Iteration 17
+
+Current Magnitudes
+[0.96045984 0.71397039 1.4898937 ]
+
+Residual Norm
+6.163904440624447
+
+Correction Norm
+0.06695402309226094
+
+Iteration 18
+
+Current Magnitudes
+[0.2872592  1.85135891 1.8583056 ]
+
+Residual Norm
+5.5502924094127835
+
+Correction Norm
+0.0416574059189867
+
+Iteration 19
+
+Current Magnitudes
+[2.30237859 0.12887717 2.41891892]
+
+Residual Norm
+6.525698611681037
+
+Correction Norm
+0.09995707497675463
+
+Iteration 20
+
+Current Magnitudes
+[1.82455169 0.78837112 2.35046148]
+
+Residual Norm
+6.465959336316441
+
+Correction Norm
+0.11462778814186496
+
+Iteration 21
+
+Current Magnitudes
+[0.45592675 1.99903986 2.15980487]
+
+Residual Norm
+5.953515914152316
+
+Correction Norm
+0.06492767779589657
+
+Iteration 22
+
+Current Magnitudes
+[2.40481664 0.73977148 2.47125475]
+
+Residual Norm
+6.326392057785074
+
+Correction Norm
+0.08559419885451423
+
+Iteration 23
+
+Current Magnitudes
+[1.7561646  1.71665939 0.85573192]
+
+Residual Norm
+5.243526986461589
+
+Correction Norm
+0.07275974279492356
+
+Iteration 24
+
+Current Magnitudes
+[0.51742807 1.67204878 1.15506915]
+
+Residual Norm
+4.358525660029233
+
+Correction Norm
+0.07049948338567531
+
+Iteration 25
+
+Current Magnitudes
+[0.83408404 1.22522549 1.67939714]
+
+Residual Norm
+3.1880886985056303
+
+Correction Norm
+0.062499964600188744
+
+Iteration 26
+
+Current Magnitudes
+[0.51672469 0.61844582 1.02342865]
+
+Residual Norm
+1.5437432673822693
+
+Correction Norm
+0.033113416333361685
+
+Iteration 27
+
+Current Magnitudes
+[0.20667121 0.69044526 0.89705894]
+
+Residual Norm
+1.3575746913289537
+
+Correction Norm
+0.01587019363065429
+
+Iteration 28
+
+Current Magnitudes
+[0.41350543 0.23542448 0.64557707]
+
+Residual Norm
+0.9747937048757649
+
+Correction Norm
+0.007661794378440811
+
+Iteration 29
+
+Current Magnitudes
+[0.34129434 0.29069471 0.63198887]
+
+Residual Norm
+0.8504586355978886
+
+Correction Norm
+0.002874718103019679
+
+Iteration 30
+
+Current Magnitudes
+[0.3869443  0.22073278 0.60762521]
+
+Residual Norm
+0.8526817541315055
+
+Correction Norm
+0.0016561630378940085
+
+Iteration 31
+
+Current Magnitudes
+[0.37212046 0.22807759 0.60014161]
+
+Residual Norm
+0.8341126831100256
+
+Correction Norm
+0.0006962961215031422
+
+Iteration 32
+
+Current Magnitudes
+[0.38687632 0.2111579  0.59801175]
+
+Residual Norm
+0.8472988619138894
+
+Correction Norm
+0.0005012556496489145
+
+Iteration 33
+
+Current Magnitudes
+[0.38349267 0.21416837 0.59757146]
+
+Residual Norm
+0.8410428240185535
+
+Correction Norm
+0.0001821871161521638
+
+Iteration 34
+
+Current Magnitudes
+[0.38868558 0.20877699 0.59738592]
+
+Residual Norm
+0.8440387863901787
+
+Correction Norm
+0.00017847371863788787
+
+Iteration 35
+
+Current Magnitudes
+[0.38797288 0.20956653 0.59743168]
+
+Residual Norm
+0.8418140191580905
+
+Correction Norm
+5.8955375853441795e-05
+
+Iteration 36
+
+Current Magnitudes
+[0.38982204 0.2077239  0.59744084]
+
+Residual Norm
+0.8426165829439847
+
+Correction Norm
+6.454241192994729e-05
+
+Iteration 37
+
+Current Magnitudes
+[0.38973251 0.20786602 0.59748129]
+
+Residual Norm
+0.8418481770848472
+
+Correction Norm
+2.079025382113595e-05
+
+Iteration 38
+
+Current Magnitudes
+[0.39040033 0.20721357 0.59749657]
+
+Residual Norm
+0.8420650592364914
+
+Correction Norm
+2.3670410969242675e-05
+
+Iteration 39
+
+Current Magnitudes
+[0.39042768 0.20720926 0.59751502]
+
+Residual Norm
+0.8418013531687476
+
+Correction Norm
+7.979995588169187e-06
+
+Iteration 40
+
+Current Magnitudes
+[0.39067337 0.20697211 0.59752314]
+
+Residual Norm
+0.8418564066206757
+
+Correction Norm
+8.869004017169123e-06
+
+Iteration 41
+
+Current Magnitudes
+[0.39070521 0.20694967 0.59753081]
+
+Residual Norm
+0.8417650712404993
+
+Correction Norm
+3.282514563690279e-06
+
+Iteration 42
+
+Current Magnitudes
+[0.39079744 0.20686149 0.59753453]
+
+Residual Norm
+0.841776988043153
+
+Correction Norm
+3.401276980429824e-06
+
+Iteration 43
+
+Current Magnitudes
+[0.39081722 0.20684551 0.59753768]
+
+Residual Norm
+0.8417448141778517
+
+Correction Norm
+1.402481476186336e-06
+
+Iteration 44
+
+Current Magnitudes
+[0.39085252 0.20681202 0.59753932]
+
+Residual Norm
+0.8417462994154069
+
+Correction Norm
+1.332464740568448e-06
+
+Iteration 45
+
+Current Magnitudes
+[0.39086285 0.20680324 0.59754061]
+
+Residual Norm
+0.8417347333046198
+
+Correction Norm
+6.07398793935666e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.790791
+Predicted Current Magnitude : 0.390863
+Measured Current Angle      : -72.732225 deg
+Predicted Current Angle     : -56.084160 deg
+
+Bus 2
+Measured Current Magnitude  : 0.253363
+Predicted Current Magnitude : 0.206803
+Measured Current Angle      : -64.694946 deg
+Predicted Current Angle     : -58.552298 deg
+
+Bus 3
+Measured Current Magnitude  : 1.200638
+Predicted Current Magnitude : 0.597541
+Measured Current Angle      : 128.746695 deg
+Predicted Current Angle     : 123.061873 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 832.30827477
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 8
+Indices                 : [ 0  1  2  4  5  8  9 10]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.05242562 -1.47793442  1.05318975 -1.49452189  1.05412376 -1.513523  ]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[4.60718424 4.94490301 0.68813126]
+
+Residual Norm
+5.702487386646853
+
+Correction Norm
+0.16061155636506916
+
+Iteration 2
+
+Current Magnitudes
+[0.84915541 1.77751756 2.10169001]
+
+Residual Norm
+6.813908648432479
+
+Correction Norm
+0.14016177460554258
+
+Iteration 3
+
+Current Magnitudes
+[0.79380789 2.14704863 2.71988787]
+
+Residual Norm
+2.596074948424822
+
+Correction Norm
+0.05115045904566458
+
+Iteration 4
+
+Current Magnitudes
+[1.11723993 0.67189296 1.32068932]
+
+Residual Norm
+2.2129768471182882
+
+Correction Norm
+0.03683984034042148
+
+Iteration 5
+
+Current Magnitudes
+[1.02303456 0.60650679 1.37259322]
+
+Residual Norm
+0.5078457278859756
+
+Correction Norm
+0.0035753252717159196
+
+Iteration 6
+
+Current Magnitudes
+[1.03512309 0.57622602 1.35465403]
+
+Residual Norm
+0.33665757497973237
+
+Correction Norm
+0.0006052242455575979
+
+Iteration 7
+
+Current Magnitudes
+[1.03378511 0.57863984 1.35620176]
+
+Residual Norm
+0.34133843248109147
+
+Correction Norm
+7.460878896447656e-05
+
+Iteration 8
+
+Current Magnitudes
+[1.0338839  0.57840782 1.35603471]
+
+Residual Norm
+0.3403170687499505
+
+Correction Norm
+1.2386764603418128e-05
+
+Iteration 9
+
+Current Magnitudes
+[1.03387447 0.57842456 1.35605723]
+
+Residual Norm
+0.3404019579815586
+
+Correction Norm
+2.4630044400373258e-06
+
+Iteration 10
+
+Current Magnitudes
+[1.03387552 0.57842329 1.35605358]
+
+Residual Norm
+0.34039196083425977
+
+Correction Norm
+5.204928470447157e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.789034
+Predicted Current Magnitude : 1.033876
+Measured Current Angle      : -64.929723 deg
+Predicted Current Angle     : -65.612817 deg
+
+Bus 2
+Measured Current Magnitude  : 0.580463
+Predicted Current Magnitude : 0.578423
+Measured Current Angle      : -131.567115 deg
+Predicted Current Angle     : -134.264072 deg
+
+Bus 3
+Measured Current Magnitude  : 1.193201
+Predicted Current Magnitude : 1.356054
+Measured Current Angle      : 83.021801 deg
+Predicted Current Angle     : 90.978935 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 88.31065940
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 3
+Indices                 : [1 5 9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00202296 -1.51773443  0.99887972 -1.56384711  0.97980573 -1.6055876 ]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[4.7857416  8.76324771 3.97912667]
+
+Residual Norm
+11.391370618211532
+
+Correction Norm
+0.21698174173506937
+
+Iteration 2
+
+Current Magnitudes
+[0.37564859 3.62586731 3.77522376]
+
+Residual Norm
+9.753164861363215
+
+Correction Norm
+0.1813086595023245
+
+Iteration 3
+
+Current Magnitudes
+[0.82521781 1.90525648 1.85159247]
+
+Residual Norm
+4.249145496196181
+
+Correction Norm
+0.07213734398849415
+
+Iteration 4
+
+Current Magnitudes
+[0.67659898 1.03014943 1.69534506]
+
+Residual Norm
+1.6974008611509106
+
+Correction Norm
+0.029065714465159112
+
+Iteration 5
+
+Current Magnitudes
+[0.65408084 0.86603541 1.36314442]
+
+Residual Norm
+0.9645403669865878
+
+Correction Norm
+0.017743476659819544
+
+Iteration 6
+
+Current Magnitudes
+[0.67050864 0.66481663 1.25603252]
+
+Residual Norm
+0.40012727505520096
+
+Correction Norm
+0.0060346052246386395
+
+Iteration 7
+
+Current Magnitudes
+[0.67438442 0.67255426 1.24764227]
+
+Residual Norm
+0.27432509171556546
+
+Correction Norm
+0.0012735998985239977
+
+Iteration 8
+
+Current Magnitudes
+[0.67616044 0.66463013 1.24336832]
+
+Residual Norm
+0.23095826475859182
+
+Correction Norm
+0.00018446794467396984
+
+Iteration 9
+
+Current Magnitudes
+[0.67622108 0.6650117  1.24349526]
+
+Residual Norm
+0.2282542310595812
+
+Correction Norm
+2.4143530730745016e-05
+
+Iteration 10
+
+Current Magnitudes
+[0.67623907 0.66491302 1.24345141]
+
+Residual Norm
+0.22790069159770293
+
+Correction Norm
+2.7117501700375256e-06
+
+Iteration 11
+
+Current Magnitudes
+[0.67623894 0.66492162 1.24345511]
+
+Residual Norm
+0.22789316631195003
+
+Correction Norm
+3.703944454506234e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.789443
+Predicted Current Magnitude : 0.676239
+Measured Current Angle      : -71.831036 deg
+Predicted Current Angle     : -72.682146 deg
+
+Bus 2
+Measured Current Magnitude  : 0.580684
+Predicted Current Magnitude : 0.664922
+Measured Current Angle      : -121.302948 deg
+Predicted Current Angle     : -116.694585 deg
+
+Bus 3
+Measured Current Magnitude  : 1.193201
+Predicted Current Magnitude : 1.243455
+Measured Current Angle      : 83.429839 deg
+Predicted Current Angle     : 85.507037 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 217.97378866
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 3
+Indices                 : [1 5 9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00630828 -1.51491682  1.00022505 -1.54444576  0.97840597 -1.58037782]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[0.42222223 1.023256   1.20988827]
+
+Residual Norm
+12.115551442982749
+
+Correction Norm
+0.18484666732660246
+
+Iteration 2
+
+Current Magnitudes
+[2.28969725 1.80804197 0.7704975 ]
+
+Residual Norm
+4.683927613276553
+
+Correction Norm
+0.07568527775960644
+
+Iteration 3
+
+Current Magnitudes
+[1.65037899 1.72544824 1.30710829]
+
+Residual Norm
+3.9683339965195557
+
+Correction Norm
+0.04772269472608862
+
+Iteration 4
+
+Current Magnitudes
+[1.15210639 0.48414038 0.89594629]
+
+Residual Norm
+2.697476738713723
+
+Correction Norm
+0.054338028215366464
+
+Iteration 5
+
+Current Magnitudes
+[0.33421065 0.65407005 0.92880372]
+
+Residual Norm
+1.8314041591539643
+
+Correction Norm
+0.037285500740748205
+
+Iteration 6
+
+Current Magnitudes
+[0.31066366 0.21382699 0.52408514]
+
+Residual Norm
+0.8166893074190745
+
+Correction Norm
+0.012006140328171228
+
+Iteration 7
+
+Current Magnitudes
+[0.33403944 0.18192824 0.51457173]
+
+Residual Norm
+0.7993717044860783
+
+Correction Norm
+0.0021359625074514697
+
+Iteration 8
+
+Current Magnitudes
+[0.31873099 0.19481928 0.51284167]
+
+Residual Norm
+0.7774139766912014
+
+Correction Norm
+0.0007212046903426196
+
+Iteration 9
+
+Current Magnitudes
+[0.3234982  0.18674358 0.50949963]
+
+Residual Norm
+0.7838743539704341
+
+Correction Norm
+0.00016009804440306023
+
+Iteration 10
+
+Current Magnitudes
+[0.32296053 0.18770039 0.50997654]
+
+Residual Norm
+0.7842357104342016
+
+Correction Norm
+3.271615880570772e-05
+
+Iteration 11
+
+Current Magnitudes
+[0.32354449 0.18684223 0.50970172]
+
+Residual Norm
+0.7840352647893228
+
+Correction Norm
+1.8848880551757445e-05
+
+Iteration 12
+
+Current Magnitudes
+[0.32352374 0.18690003 0.50974498]
+
+Residual Norm
+0.7839806232934151
+
+Correction Norm
+3.1755144315685745e-06
+
+Iteration 13
+
+Current Magnitudes
+[0.32358788 0.18680822 0.50971756]
+
+Residual Norm
+0.7839491305789297
+
+Correction Norm
+2.0973928555495076e-06
+
+Iteration 14
+
+Current Magnitudes
+[0.32358913 0.18680961 0.5097209 ]
+
+Residual Norm
+0.7839406795084699
+
+Correction Norm
+3.6520539314476713e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.790425
+Predicted Current Magnitude : 0.323589
+Measured Current Angle      : -72.463748 deg
+Predicted Current Angle     : -67.119668 deg
+
+Bus 2
+Measured Current Magnitude  : 0.253277
+Predicted Current Magnitude : 0.186810
+Measured Current Angle      : -64.787019 deg
+Predicted Current Angle     : -60.988801 deg
+
+Bus 3
+Measured Current Magnitude  : 1.041975
+Predicted Current Magnitude : 0.509721
+Measured Current Angle      : 127.036486 deg
+Predicted Current Angle     : 115.123545 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 582.04090862
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 5
+Indices                 : [ 1  2  5  9 10]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00448735 -1.48777407  1.00246516 -1.50205392  1.00100686 -1.51905886]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[0.76311204 0.25672871 1.01935853]
+
+Residual Norm
+0.28712050116158777
+
+Correction Norm
+0.008970693386285547
+
+Iteration 2
+
+Current Magnitudes
+[0.76275151 0.25686136 1.01929439]
+
+Residual Norm
+0.03766401856282467
+
+Correction Norm
+0.00018623574562277363
+
+Iteration 3
+
+Current Magnitudes
+[0.76272407 0.25688076 1.01928728]
+
+Residual Norm
+0.036206778420590745
+
+Correction Norm
+3.6316718094004183e-06
+
+Iteration 4
+
+Current Magnitudes
+[0.76272379 0.25688093 1.01928719]
+
+Residual Norm
+0.03622329038409175
+
+Correction Norm
+7.074119671668634e-08
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.788496
+Predicted Current Magnitude : 0.762724
+Measured Current Angle      : -71.011609 deg
+Predicted Current Angle     : -71.256940 deg
+
+Bus 2
+Measured Current Magnitude  : 0.255239
+Predicted Current Magnitude : 0.256881
+Measured Current Angle      : -67.927523 deg
+Predicted Current Angle     : -67.962925 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042644
+Predicted Current Magnitude : 1.019287
+Measured Current Angle      : 109.535061 deg
+Predicted Current Angle     : 109.572790 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 0.92853727
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.988177
+Bad Data Detected       : False
+Confidence (1-p)        : 0.011823
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00447213 -1.57002759  1.00037472 -1.60381046  0.99791637 -1.63794073]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[1.25487242 2.86313081 1.61250396]
+
+Residual Norm
+40.304631721750184
+
+Correction Norm
+0.5054219274356179
+
+Iteration 2
+
+Current Magnitudes
+[2.51374535 1.96509707 1.16480089]
+
+Residual Norm
+4.253627733689139
+
+Correction Norm
+0.1726208696624736
+
+Iteration 3
+
+Current Magnitudes
+[0.46981518 2.51689874 2.07340293]
+
+Residual Norm
+3.5851291511980543
+
+Correction Norm
+0.0985053954238444
+
+Iteration 4
+
+Current Magnitudes
+[1.52050385 1.85064113 0.94827761]
+
+Residual Norm
+4.150434381998835
+
+Correction Norm
+0.057143905603662504
+
+Iteration 5
+
+Current Magnitudes
+[0.65332939 1.14331335 1.7373685 ]
+
+Residual Norm
+3.055025839908131
+
+Correction Norm
+0.06203369564953615
+
+Iteration 6
+
+Current Magnitudes
+[0.60525786 0.81938401 1.31174365]
+
+Residual Norm
+1.6181522461163924
+
+Correction Norm
+0.0332089381120831
+
+Iteration 7
+
+Current Magnitudes
+[0.5468918  0.74722325 1.2243516 ]
+
+Residual Norm
+0.9059574764146856
+
+Correction Norm
+0.004268096431101376
+
+Iteration 8
+
+Current Magnitudes
+[0.54105265 0.75762434 1.22088092]
+
+Residual Norm
+0.8547557845285984
+
+Correction Norm
+0.0012897300269405208
+
+Iteration 9
+
+Current Magnitudes
+[0.54176423 0.75130086 1.22034143]
+
+Residual Norm
+0.8576075808541184
+
+Correction Norm
+0.00034103695126570127
+
+Iteration 10
+
+Current Magnitudes
+[0.54040831 0.75400414 1.21997474]
+
+Residual Norm
+0.854066656814507
+
+Correction Norm
+0.00017941720021957065
+
+Iteration 11
+
+Current Magnitudes
+[0.54082853 0.75291099 1.220102  ]
+
+Residual Norm
+0.8557131695265229
+
+Correction Norm
+6.501551551367323e-05
+
+Iteration 12
+
+Current Magnitudes
+[0.54059965 0.75338105 1.22003621]
+
+Residual Norm
+0.8550503915266936
+
+Correction Norm
+2.9114358154688303e-05
+
+Iteration 13
+
+Current Magnitudes
+[0.54068278 0.75319213 1.22006305]
+
+Residual Norm
+0.8553469500386622
+
+Correction Norm
+1.1441938142941728e-05
+
+Iteration 14
+
+Current Magnitudes
+[0.54064501 0.75327171 1.22005173]
+
+Residual Norm
+0.8552299279338066
+
+Correction Norm
+4.867900330094512e-06
+
+Iteration 15
+
+Current Magnitudes
+[0.54065974 0.75323934 1.22005642]
+
+Residual Norm
+0.8552800910032837
+
+Correction Norm
+1.9686284359575835e-06
+
+Iteration 16
+
+Current Magnitudes
+[0.54065343 0.75325281 1.22005449]
+
+Residual Norm
+0.8552598969172459
+
+Correction Norm
+8.221597398905541e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.788259
+Predicted Current Magnitude : 0.540653
+Measured Current Angle      : -71.140547 deg
+Predicted Current Angle     : -81.535899 deg
+
+Bus 2
+Measured Current Magnitude  : 0.253925
+Predicted Current Magnitude : 0.753253
+Measured Current Angle      : -30.509322 deg
+Predicted Current Angle     : -42.074707 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042157
+Predicted Current Magnitude : 1.220054
+Measured Current Angle      : 109.240618 deg
+Predicted Current Angle     : 121.567229 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 2738.73973639
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 4
+Indices                 : [1 5 6 9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.0083348  -1.36136285  0.99642827 -1.38235753  0.99313156 -1.42336336]
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[1.28047841 0.70049913 1.16908126]
+
+Residual Norm
+4.544391788281414
+
+Correction Norm
+0.061987922325144364
+
+Iteration 2
+
+Current Magnitudes
+[1.93955964 1.42964441 1.34912819]
+
+Residual Norm
+3.752610782665482
+
+Correction Norm
+0.06905516241424867
+
+Iteration 3
+
+Current Magnitudes
+[0.39809319 1.10549033 1.40606083]
+
+Residual Norm
+2.366735348395523
+
+Correction Norm
+0.056026602151732115
+
+Iteration 4
+
+Current Magnitudes
+[0.69031998 0.26811611 0.94410614]
+
+Residual Norm
+1.1603162478856612
+
+Correction Norm
+0.01327337887712435
+
+Iteration 5
+
+Current Magnitudes
+[0.71024671 0.24225319 0.9510266 ]
+
+Residual Norm
+0.3304697130535794
+
+Correction Norm
+0.00794558116631791
+
+Iteration 6
+
+Current Magnitudes
+[0.69918016 0.23898457 0.93700595]
+
+Residual Norm
+0.14235199440107366
+
+Correction Norm
+0.000979212780482386
+
+Iteration 7
+
+Current Magnitudes
+[0.69908126 0.23880679 0.93675019]
+
+Residual Norm
+0.1544971483986012
+
+Correction Norm
+4.8367331312344624e-05
+
+Iteration 8
+
+Current Magnitudes
+[0.69908357 0.23878944 0.93673681]
+
+Residual Norm
+0.15463533109960056
+
+Correction Norm
+3.2545866632497017e-06
+
+Iteration 9
+
+Current Magnitudes
+[0.69908391 0.23878804 0.93673587]
+
+Residual Norm
+0.15463741171751358
+
+Correction Norm
+2.3685903312071448e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.789624
+Predicted Current Magnitude : 0.699084
+Measured Current Angle      : -72.012469 deg
+Predicted Current Angle     : -71.009450 deg
+
+Bus 2
+Measured Current Magnitude  : 0.253403
+Predicted Current Magnitude : 0.238788
+Measured Current Angle      : -65.044366 deg
+Predicted Current Angle     : -64.534416 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042493
+Predicted Current Magnitude : 0.936736
+Measured Current Angle      : 113.118306 deg
+Predicted Current Angle     : 110.637849 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 22.75671938
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000882
+Bad Data Detected       : True
+Confidence (1-p)        : 0.999118
+
+Suspect Measurements    : 1
+Indices                 : [9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00541594 -1.54911318  1.00110073 -1.57997866  0.99863333 -1.61130618]
+
+10-CASE FUSION EVALUATION SUMMARY
+====================================================================================================================================================================================
+       case        neural_fault_type neural_faulty_pmu  neural_confidence  classical_test_statistic  classical_critical_value  classical_p_value  classical_dof classical_decision fusion_decision  fusion_agreement  residual_norm_after_mitigation
+            NORMAL         NORMAL           NONE            0.989694                0.261802                12.591587            9.996610e-01          6               PASS                NORMAL         True                   0.010879           
+   BAD_DATA - PMU1       BAD_DATA           PMU1            0.999997              878.191860                12.591587            0.000000e+00          6               FAIL             AGREEMENT         True                   0.517262           
+   BAD_DATA - PMU2       BAD_DATA           PMU2            0.997132              513.881565                12.591587            0.000000e+00          6               FAIL             AGREEMENT         True                   0.342380           
+   BAD_DATA - PMU3       BAD_DATA           PMU3            0.999792              832.308275                12.591587            0.000000e+00          6               FAIL             AGREEMENT         True                   0.523294           
+       SYNC - PMU1           SYNC           PMU1            0.937337               88.310659                12.591587            1.110223e-16          6               FAIL             AGREEMENT         True                   0.170059           
+       SYNC - PMU2           SYNC           PMU2            0.865480              217.973789                12.591587            0.000000e+00          6               FAIL             AGREEMENT         True                   0.237546           
+       SYNC - PMU3           SYNC           PMU3            0.976768              582.040909                12.591587            0.000000e+00          6               FAIL             AGREEMENT         True                   0.433548           
+CLOCK_DRIFT - PMU1    CLOCK_DRIFT           PMU1            0.949767                0.928537                12.591587            9.881768e-01          6               PASS          DISAGREEMENT        False                   0.036223           
+CLOCK_DRIFT - PMU2    CLOCK_DRIFT           PMU2            0.960741             2738.739736                12.591587            0.000000e+00          6               FAIL             AGREEMENT         True                   0.846843           
+CLOCK_DRIFT - PMU3    CLOCK_DRIFT           PMU3            0.943007               22.756719                12.591587            8.821908e-04          6               FAIL             AGREEMENT         True                   0.085317           
+====================================================================================================================================================================================
+
+Genuine disagreements:
+              case neural_fault_type classical_decision fusion_decision
+CLOCK_DRIFT - PMU1       CLOCK_DRIFT               PASS    DISAGREEMENT
