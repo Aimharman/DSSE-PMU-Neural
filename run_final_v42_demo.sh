@@ -23,7 +23,7 @@ echo ">>> STEP 1: FINAL V4.2 TRAINING"
 echo
 sleep 3
 
-python3 train_multitask_controller_v4_2.py ../scenario_data/*.csv
+python3 train_multitask_controller_v4_2_final.py ../scenario_data/*.csv
 
 echo
 echo "======================================================================"
@@ -41,7 +41,7 @@ sleep 3
 
 cd "$PROJECT"
 
-python3 run_neural_wls_demo.py
+python3 run_neural_wls_demo_final.py
 
 echo
 echo "======================================================================"

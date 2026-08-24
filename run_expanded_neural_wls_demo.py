@@ -37,7 +37,7 @@ sys.path.insert(0, str(NEURAL))
 from state_estimator import StateEstimator
 from neural_controller.wls_neural import NeuralWeightedLeastSquares
 
-from neural_controller.multitask_active_controller_v4_2 import (
+from neural_controller.multitask_active_controller_v4_2_final import (
     scan_csv,
 )
 
