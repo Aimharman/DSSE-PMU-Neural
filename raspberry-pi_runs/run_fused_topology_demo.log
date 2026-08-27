@@ -1,0 +1,968 @@
+
+
+╔==============================================================================╗
+║                                                                              ║
+║      FUSED TOPOLOGY DEMONSTRATION: Neural + Classical + Decision Fusion      ║
+║                                                                              ║
+╚==============================================================================╝
+
+
+================================================================================
+ CASE: NORMAL
+================================================================================
+CSV: scenario_data/normal_r03.csv
+
+DEMONSTRATION / REPRESENTATIVE WINDOW
+--------------------------------------------------------------------------------
+Sample index     : 859
+Time             : 0.859000 s
+PDC window       : 20 samples
+Note: this window is selected for demonstration; it is not a formal evaluation protocol.
+
+================================================================================
+ NEURAL STREAM
+================================================================================
+Fault type       : NORMAL
+Faulty PMU       : NONE
+Neural confidence: 0.9897
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[0.95695832 0.2251775  0.87577909]
+
+Residual Norm
+3.0062103784935315
+
+Correction Norm
+0.004203250880759429
+
+Iteration 2
+
+Current Magnitudes
+[0.76808764 0.42465081 1.093242  ]
+
+Residual Norm
+1.8244239650826564
+
+Correction Norm
+0.006617451749149896
+
+Iteration 3
+
+Current Magnitudes
+[0.75564335 0.33152357 1.08662351]
+
+Residual Norm
+0.6191543194907183
+
+Correction Norm
+0.004617361981078614
+
+Iteration 4
+
+Current Magnitudes
+[0.78941033 0.25579812 1.04064735]
+
+Residual Norm
+0.22721464840040728
+
+Correction Norm
+0.0017287899829265911
+
+Iteration 5
+
+Current Magnitudes
+[0.79043435 0.24983667 1.03809321]
+
+Residual Norm
+0.06068512054595435
+
+Correction Norm
+0.0002749231806929816
+
+Iteration 6
+
+Current Magnitudes
+[0.7907231  0.24930249 1.03781112]
+
+Residual Norm
+0.010609187708804377
+
+Correction Norm
+1.022418823361812e-05
+
+Iteration 7
+
+Current Magnitudes
+[0.79072024 0.2493069  1.03781281]
+
+Residual Norm
+0.010878761148761722
+
+Correction Norm
+1.249368868526989e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.790749
+Predicted Current Magnitude : 0.790720
+Measured Current Angle      : -73.083956 deg
+Predicted Current Angle     : -72.808182 deg
+
+Bus 2
+Measured Current Magnitude  : 0.253784
+Predicted Current Magnitude : 0.249307
+Measured Current Angle      : -64.124683 deg
+Predicted Current Angle     : -64.046373 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042117
+Predicted Current Magnitude : 1.037813
+Measured Current Angle      : 109.599753 deg
+Predicted Current Angle     : 109.288884 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 0.26180158
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.999661
+Bad Data Detected       : False
+Confidence (1-p)        : 0.000339
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00566171 -1.57004929  1.00048479 -1.60492508  0.997859   -1.63966575]
+
+================================================================================
+ CLASSICAL STREAM
+================================================================================
+Method             : Ordinary WLS
+Measurement count  : 12
+State count        : 6
+Degrees of freedom : 6
+Chi-square statistic: 0.26180158
+Critical value     : 12.59158724
+P-value            : 0.99966102
+Decision           : PASS
+Status             : CONSISTENT
+
+Estimated State (ordinary WLS):
+
+Estimated bus states:
+  Bus 1: |V| = 1.005662 pu, angle = -89.957198 deg
+  Bus 2: |V| = 1.000485 pu, angle = -91.955434 deg
+  Bus 3: |V| = 0.997859 pu, angle = -93.945927 deg
+
+================================================================================
+ DECISION FUSION
+================================================================================
+Neural decision     : NORMAL
+Classical decision  : NORMAL
+Agreement           : YES
+Final diagnosis     : NORMAL
+Fusion action       : ACCEPT ALL DATA
+Reason              : Both streams indicate a consistent normal operating state. Continue without PMU mitigation.
+
+================================================================================
+ NEURAL WLS MITIGATION
+================================================================================
+PMU1 weights : [1.0, 1.0, 1.0, 1.0]
+PMU2 weights : [1.0, 1.0, 1.0, 1.0]
+PMU3 weights : [1.0, 1.0, 1.0, 1.0]
+Residual norm after mitigation : 0.01087876
+Post-mitigation state estimate:
+
+Estimated bus states:
+  Bus 1: |V| = 1.005662 pu, angle = -89.957198 deg
+  Bus 2: |V| = 1.000485 pu, angle = -91.955434 deg
+  Bus 3: |V| = 0.997859 pu, angle = -93.945927 deg
+
+================================================================================
+ COMPLETED: NORMAL
+================================================================================
+
+
+================================================================================
+ CASE: BAD_DATA - PMU2
+================================================================================
+CSV: scenario_data/PMU2_bad_data_r03.csv
+
+DEMONSTRATION / REPRESENTATIVE WINDOW
+--------------------------------------------------------------------------------
+Sample index     : 1959
+Time             : 1.959000 s
+PDC window       : 20 samples
+Note: this window is selected for demonstration; it is not a formal evaluation protocol.
+
+================================================================================
+ NEURAL STREAM
+================================================================================
+Fault type       : BAD_DATA
+Faulty PMU       : PMU2
+Neural confidence: 0.9971
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[3.13042363 3.59809159 0.73561903]
+
+Residual Norm
+18.438515127854686
+
+Correction Norm
+0.23214880137474947
+
+Iteration 2
+
+Current Magnitudes
+[0.99021241 2.56078303 1.62870065]
+
+Residual Norm
+4.797970927494037
+
+Correction Norm
+0.10072583693532772
+
+Iteration 3
+
+Current Magnitudes
+[1.99826961 1.168763   1.41554598]
+
+Residual Norm
+3.527181421778688
+
+Correction Norm
+0.08297967014276761
+
+Iteration 4
+
+Current Magnitudes
+[0.52269117 1.32110999 1.82498425]
+
+Residual Norm
+2.542699246225402
+
+Correction Norm
+0.0755240391965291
+
+Iteration 5
+
+Current Magnitudes
+[0.63821093 0.50221653 1.13539241]
+
+Residual Norm
+1.4151006537066166
+
+Correction Norm
+0.01723422822220736
+
+Iteration 6
+
+Current Magnitudes
+[0.65615666 0.45788903 1.1074097 ]
+
+Residual Norm
+0.3870461074618869
+
+Correction Norm
+0.003133316036275551
+
+Iteration 7
+
+Current Magnitudes
+[0.65350423 0.46149091 1.10688874]
+
+Residual Norm
+0.3435923121191322
+
+Correction Norm
+0.00019322462413713052
+
+Iteration 8
+
+Current Magnitudes
+[0.65474281 0.45903809 1.10581188]
+
+Residual Norm
+0.3416514283181884
+
+Correction Norm
+5.2552445982431494e-05
+
+Iteration 9
+
+Current Magnitudes
+[0.6546427  0.45927116 1.10589166]
+
+Residual Norm
+0.34011839880491773
+
+Correction Norm
+8.414177487487589e-06
+
+Iteration 10
+
+Current Magnitudes
+[0.65468913 0.45917706 1.10585171]
+
+Residual Norm
+0.3401266557991936
+
+Correction Norm
+2.0585118459226124e-06
+
+Iteration 11
+
+Current Magnitudes
+[0.65468319 0.45919008 1.10585663]
+
+Residual Norm
+0.3400761095167057
+
+Correction Norm
+3.841649106910504e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.789466
+Predicted Current Magnitude : 0.654683
+Measured Current Angle      : -71.969655 deg
+Predicted Current Angle     : -72.777981 deg
+
+Bus 2
+Measured Current Magnitude  : 0.293782
+Predicted Current Magnitude : 0.459190
+Measured Current Angle      : -52.599987 deg
+Predicted Current Angle     : -58.803554 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042757
+Predicted Current Magnitude : 1.105857
+Measured Current Angle      : 109.594502 deg
+Predicted Current Angle     : 112.976999 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 513.88156473
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 6
+Indices                 : [0 1 4 5 8 9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.05974853 -1.49892371  1.05331795 -1.52595968  1.04998756 -1.56108885]
+
+================================================================================
+ CLASSICAL STREAM
+================================================================================
+Method             : Ordinary WLS
+Measurement count  : 12
+State count        : 6
+Degrees of freedom : 6
+Chi-square statistic: 513.88156473
+Critical value     : 12.59158724
+P-value            : 0.00000000
+Decision           : FAIL
+Status             : STATISTICALLY INCONSISTENT
+
+Estimated State (ordinary WLS):
+
+Estimated bus states:
+  Bus 1: |V| = 1.059749 pu, angle = -85.882003 deg
+  Bus 2: |V| = 1.053318 pu, angle = -87.431050 deg
+  Bus 3: |V| = 1.049988 pu, angle = -89.443803 deg
+
+================================================================================
+ DECISION FUSION
+================================================================================
+Neural decision     : BAD_DATA
+Classical decision  : ANOMALY
+Agreement           : YES
+Final diagnosis     : AGREEMENT
+Fusion action       : HIGH CONFIDENCE ACTION
+Reason              : Neural fault diagnosis and the classical chi-square test both indicate a statistically inconsistent measurement set. Retain the neural PMU localization and apply mitigation.
+
+================================================================================
+ NEURAL WLS MITIGATION
+================================================================================
+PMU1 weights : [1.0, 1.0, 1.0, 1.0]
+PMU2 weights : [0.1, 0.1, 0.1, 0.1]
+PMU3 weights : [1.0, 1.0, 1.0, 1.0]
+Residual norm after mitigation : 0.34238021
+Post-mitigation state estimate:
+
+Estimated bus states:
+  Bus 1: |V| = 1.005837 pu, angle = -89.898141 deg
+  Bus 2: |V| = 1.001045 pu, angle = -91.875174 deg
+  Bus 3: |V| = 0.998719 pu, angle = -93.877045 deg
+
+================================================================================
+ COMPLETED: BAD_DATA - PMU2
+================================================================================
+
+
+================================================================================
+ CASE: SYNC - PMU2
+================================================================================
+CSV: scenario_data/PMU2_sync_r03.csv
+
+DEMONSTRATION / REPRESENTATIVE WINDOW
+--------------------------------------------------------------------------------
+Sample index     : 2199
+Time             : 2.199000 s
+PDC window       : 20 samples
+Note: this window is selected for demonstration; it is not a formal evaluation protocol.
+
+================================================================================
+ NEURAL STREAM
+================================================================================
+Fault type       : SYNC
+Faulty PMU       : PMU2
+Neural confidence: 0.8655
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[4.7857416  8.76324771 3.97912667]
+
+Residual Norm
+11.391370618211532
+
+Correction Norm
+0.21698174173506937
+
+Iteration 2
+
+Current Magnitudes
+[0.37564859 3.62586731 3.77522376]
+
+Residual Norm
+9.753164861363215
+
+Correction Norm
+0.1813086595023245
+
+Iteration 3
+
+Current Magnitudes
+[0.82521781 1.90525648 1.85159247]
+
+Residual Norm
+4.249145496196181
+
+Correction Norm
+0.07213734398849415
+
+Iteration 4
+
+Current Magnitudes
+[0.67659898 1.03014943 1.69534506]
+
+Residual Norm
+1.6974008611509106
+
+Correction Norm
+0.029065714465159112
+
+Iteration 5
+
+Current Magnitudes
+[0.65408084 0.86603541 1.36314442]
+
+Residual Norm
+0.9645403669865878
+
+Correction Norm
+0.017743476659819544
+
+Iteration 6
+
+Current Magnitudes
+[0.67050864 0.66481663 1.25603252]
+
+Residual Norm
+0.40012727505520096
+
+Correction Norm
+0.0060346052246386395
+
+Iteration 7
+
+Current Magnitudes
+[0.67438442 0.67255426 1.24764227]
+
+Residual Norm
+0.27432509171556546
+
+Correction Norm
+0.0012735998985239977
+
+Iteration 8
+
+Current Magnitudes
+[0.67616044 0.66463013 1.24336832]
+
+Residual Norm
+0.23095826475859182
+
+Correction Norm
+0.00018446794467396984
+
+Iteration 9
+
+Current Magnitudes
+[0.67622108 0.6650117  1.24349526]
+
+Residual Norm
+0.2282542310595812
+
+Correction Norm
+2.4143530730745016e-05
+
+Iteration 10
+
+Current Magnitudes
+[0.67623907 0.66491302 1.24345141]
+
+Residual Norm
+0.22790069159770293
+
+Correction Norm
+2.7117501700375256e-06
+
+Iteration 11
+
+Current Magnitudes
+[0.67623894 0.66492162 1.24345511]
+
+Residual Norm
+0.22789316631195003
+
+Correction Norm
+3.703944454506234e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.789443
+Predicted Current Magnitude : 0.676239
+Measured Current Angle      : -71.831036 deg
+Predicted Current Angle     : -72.682146 deg
+
+Bus 2
+Measured Current Magnitude  : 0.580684
+Predicted Current Magnitude : 0.664922
+Measured Current Angle      : -121.302948 deg
+Predicted Current Angle     : -116.694585 deg
+
+Bus 3
+Measured Current Magnitude  : 1.193201
+Predicted Current Magnitude : 1.243455
+Measured Current Angle      : 83.429839 deg
+Predicted Current Angle     : 85.507037 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 217.97378866
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 3
+Indices                 : [1 5 9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.00630828 -1.51491682  1.00022505 -1.54444576  0.97840597 -1.58037782]
+
+================================================================================
+ CLASSICAL STREAM
+================================================================================
+Method             : Ordinary WLS
+Measurement count  : 12
+State count        : 6
+Degrees of freedom : 6
+Chi-square statistic: 217.97378866
+Critical value     : 12.59158724
+P-value            : 0.00000000
+Decision           : FAIL
+Status             : STATISTICALLY INCONSISTENT
+
+Estimated State (ordinary WLS):
+
+Estimated bus states:
+  Bus 1: |V| = 1.006308 pu, angle = -86.798340 deg
+  Bus 2: |V| = 1.000225 pu, angle = -88.490224 deg
+  Bus 3: |V| = 0.978406 pu, angle = -90.548979 deg
+
+================================================================================
+ DECISION FUSION
+================================================================================
+Neural decision     : SYNC
+Classical decision  : ANOMALY
+Agreement           : YES
+Final diagnosis     : AGREEMENT
+Fusion action       : HIGH CONFIDENCE ACTION
+Reason              : Neural fault diagnosis and the classical chi-square test both indicate a statistically inconsistent measurement set. Retain the neural PMU localization and apply mitigation.
+
+================================================================================
+ NEURAL WLS MITIGATION
+================================================================================
+PMU1 weights : [1.0, 1.0, 1.0, 1.0]
+PMU2 weights : [1.0, 0.1, 1.0, 0.1]
+PMU3 weights : [1.0, 1.0, 1.0, 1.0]
+Residual norm after mitigation : 0.23754610
+Post-mitigation state estimate:
+
+Estimated bus states:
+  Bus 1: |V| = 1.004884 pu, angle = -90.044183 deg
+  Bus 2: |V| = 1.000319 pu, angle = -92.013033 deg
+  Bus 3: |V| = 0.980308 pu, angle = -94.016038 deg
+
+================================================================================
+ COMPLETED: SYNC - PMU2
+================================================================================
+
+
+================================================================================
+ CASE: CLOCK_DRIFT - PMU2
+================================================================================
+CSV: scenario_data/PMU2_clock_drift_r03.csv
+
+DEMONSTRATION / REPRESENTATIVE WINDOW
+--------------------------------------------------------------------------------
+Sample index     : 2999
+Time             : 2.999000 s
+PDC window       : 20 samples
+Note: this window is selected for demonstration; it is not a formal evaluation protocol.
+
+================================================================================
+ NEURAL STREAM
+================================================================================
+Fault type       : CLOCK_DRIFT
+Faulty PMU       : PMU2
+Neural confidence: 0.9607
+
+==============================================
+ Weighted Least Squares
+==============================================
+
+Iteration 1
+
+Current Magnitudes
+[1.25487242 2.86313081 1.61250396]
+
+Residual Norm
+40.304631721750184
+
+Correction Norm
+0.5054219274356179
+
+Iteration 2
+
+Current Magnitudes
+[2.51374535 1.96509707 1.16480089]
+
+Residual Norm
+4.253627733689139
+
+Correction Norm
+0.1726208696624736
+
+Iteration 3
+
+Current Magnitudes
+[0.46981518 2.51689874 2.07340293]
+
+Residual Norm
+3.5851291511980543
+
+Correction Norm
+0.0985053954238444
+
+Iteration 4
+
+Current Magnitudes
+[1.52050385 1.85064113 0.94827761]
+
+Residual Norm
+4.150434381998835
+
+Correction Norm
+0.057143905603662504
+
+Iteration 5
+
+Current Magnitudes
+[0.65332939 1.14331335 1.7373685 ]
+
+Residual Norm
+3.055025839908131
+
+Correction Norm
+0.06203369564953615
+
+Iteration 6
+
+Current Magnitudes
+[0.60525786 0.81938401 1.31174365]
+
+Residual Norm
+1.6181522461163924
+
+Correction Norm
+0.0332089381120831
+
+Iteration 7
+
+Current Magnitudes
+[0.5468918  0.74722325 1.2243516 ]
+
+Residual Norm
+0.9059574764146856
+
+Correction Norm
+0.004268096431101376
+
+Iteration 8
+
+Current Magnitudes
+[0.54105265 0.75762434 1.22088092]
+
+Residual Norm
+0.8547557845285984
+
+Correction Norm
+0.0012897300269405208
+
+Iteration 9
+
+Current Magnitudes
+[0.54176423 0.75130086 1.22034143]
+
+Residual Norm
+0.8576075808541184
+
+Correction Norm
+0.00034103695126570127
+
+Iteration 10
+
+Current Magnitudes
+[0.54040831 0.75400414 1.21997474]
+
+Residual Norm
+0.854066656814507
+
+Correction Norm
+0.00017941720021957065
+
+Iteration 11
+
+Current Magnitudes
+[0.54082853 0.75291099 1.220102  ]
+
+Residual Norm
+0.8557131695265229
+
+Correction Norm
+6.501551551367323e-05
+
+Iteration 12
+
+Current Magnitudes
+[0.54059965 0.75338105 1.22003621]
+
+Residual Norm
+0.8550503915266936
+
+Correction Norm
+2.9114358154688303e-05
+
+Iteration 13
+
+Current Magnitudes
+[0.54068278 0.75319213 1.22006305]
+
+Residual Norm
+0.8553469500386622
+
+Correction Norm
+1.1441938142941728e-05
+
+Iteration 14
+
+Current Magnitudes
+[0.54064501 0.75327171 1.22005173]
+
+Residual Norm
+0.8552299279338066
+
+Correction Norm
+4.867900330094512e-06
+
+Iteration 15
+
+Current Magnitudes
+[0.54065974 0.75323934 1.22005642]
+
+Residual Norm
+0.8552800910032837
+
+Correction Norm
+1.9686284359575835e-06
+
+Iteration 16
+
+Current Magnitudes
+[0.54065343 0.75325281 1.22005449]
+
+Residual Norm
+0.8552598969172459
+
+Correction Norm
+8.221597398905541e-07
+
+Converged.
+
+==============================================
+ Current Measurement Consistency
+==============================================
+
+Bus 1
+Measured Current Magnitude  : 0.788259
+Predicted Current Magnitude : 0.540653
+Measured Current Angle      : -71.140547 deg
+Predicted Current Angle     : -81.535899 deg
+
+Bus 2
+Measured Current Magnitude  : 0.253925
+Predicted Current Magnitude : 0.753253
+Measured Current Angle      : -30.509322 deg
+Predicted Current Angle     : -42.074707 deg
+
+Bus 3
+Measured Current Magnitude  : 1.042157
+Predicted Current Magnitude : 1.220054
+Measured Current Angle      : 109.240618 deg
+Predicted Current Angle     : 121.567229 deg
+
+==============================================
+ Chi-Squared Test (Bad Data Detection)
+==============================================
+Test Statistic (J2)     : 2738.73973639
+Critical Value          : 12.59158724
+Degrees of Freedom      : 6
+P-value                 : 0.000000
+Bad Data Detected       : True
+Confidence (1-p)        : 1.000000
+
+Suspect Measurements    : 4
+Indices                 : [1 5 6 9]
+
+==============================================
+ Final Estimated State
+==============================================
+[ 1.0083348  -1.36136285  0.99642827 -1.38235753  0.99313156 -1.42336336]
+
+================================================================================
+ CLASSICAL STREAM
+================================================================================
+Method             : Ordinary WLS
+Measurement count  : 12
+State count        : 6
+Degrees of freedom : 6
+Chi-square statistic: 2738.73973639
+Critical value     : 12.59158724
+P-value            : 0.00000000
+Decision           : FAIL
+Status             : STATISTICALLY INCONSISTENT
+
+Estimated State (ordinary WLS):
+
+Estimated bus states:
+  Bus 1: |V| = 1.008335 pu, angle = -78.000345 deg
+  Bus 2: |V| = 0.996428 pu, angle = -79.203252 deg
+  Bus 3: |V| = 0.993132 pu, angle = -81.552713 deg
+
+================================================================================
+ DECISION FUSION
+================================================================================
+Neural decision     : CLOCK_DRIFT
+Classical decision  : ANOMALY
+Agreement           : YES
+Final diagnosis     : AGREEMENT
+Fusion action       : HIGH CONFIDENCE ACTION
+Reason              : Neural fault diagnosis and the classical chi-square test both indicate a statistically inconsistent measurement set. Retain the neural PMU localization and apply mitigation.
+
+================================================================================
+ NEURAL WLS MITIGATION
+================================================================================
+PMU1 weights : [1.0, 1.0, 1.0, 1.0]
+PMU2 weights : [0.1, 0.1, 0.1, 0.1]
+PMU3 weights : [1.0, 1.0, 1.0, 1.0]
+Residual norm after mitigation : 0.84684340
+Post-mitigation state estimate:
+
+Estimated bus states:
+  Bus 1: |V| = 1.004550 pu, angle = -89.755409 deg
+  Bus 2: |V| = 0.999735 pu, angle = -91.738953 deg
+  Bus 3: |V| = 0.997693 pu, angle = -93.764234 deg
+
+================================================================================
+ COMPLETED: CLOCK_DRIFT - PMU2
+================================================================================
+
+
+╔==============================================================================╗
+║                               TOPOLOGY SUMMARY                               ║
+╚==============================================================================╝
+
+NORMAL                    → NORMAL          (✓)
+
+BAD_DATA - PMU2           → AGREEMENT       (✓)
+
+SYNC - PMU2               → AGREEMENT       (✓)
+
+CLOCK_DRIFT - PMU2        → AGREEMENT       (✓)

@@ -1,56 +1,433 @@
-"""Weighted least-squares estimation utilities used by the PMU pipeline."""
+"""
+===========================================================
+wls.py
 
-from __future__ import annotations
+Weighted Least Squares Solver
+
+Implements iterative Gauss-Newton State Estimation.
+
+Faulty measurements can be isolated by assigning them
+zero weight. The returned active_indices identify the
+measurements that actually contribute to the WLS solution.
+===========================================================
+"""
 
 import numpy as np
 
+from measurement_model import (
+    measurement_model,
+    state_to_voltage,
+    compute_currents,
+)
+
+from jacobian import compute_jacobian
+from network_model import NUM_BUSES
 from chi_squared_test import ChiSquaredTest
 
 
+###########################################################################
+# CONFIGURATION
+###########################################################################
+
+MAX_ITERATIONS = 250
+TOLERANCE = 1e-6
+
+
 class WeightedLeastSquares:
-    """Minimal WLS solver with a chi-squared result payload used by tests."""
 
-    def solve(self, z, x0, bad_data_weight=1.0, bad_data_index=None):
-        z = np.asarray(z, dtype=float)
-        x0 = np.asarray(x0, dtype=float).reshape(-1)
+    def __init__(
+        self,
+        tolerance=TOLERANCE,
+        max_iterations=MAX_ITERATIONS,
+    ):
 
-        if z.size == 0:
-            return x0.copy(), z.copy(), np.zeros((0, 0)), np.array([], dtype=int), {
-                "p_value": 1.0,
-                "bad_data_detected": False,
-                "anomaly_score": 0.0,
-            }
+        self.tolerance = tolerance
+        self.max_iterations = max_iterations
 
-        if x0.size == 0:
-            x_hat = np.zeros_like(z, dtype=float)
-        else:
-            x_hat = x0.copy()
+    #######################################################################
+    # Build covariance matrix
+    #######################################################################
 
-        # Build a simple measurement model consistent with the test harness.
-        from measurement_model import measurement_model
+    @staticmethod
+    def _build_covariance_matrix():
 
-        residual = z - measurement_model(x_hat)
-        if residual.size != z.size:
-            residual = z - x_hat
+        return np.diag([
+            1e-4, 1e-4, 1e-2, 1e-2,
+            1e-4, 1e-4, 1e-2, 1e-2,
+            1e-4, 1e-4, 1e-2, 1e-2,
+        ])
 
-        w = np.ones(z.size, dtype=float)
+    #######################################################################
+    # Normalize bad-data indices
+    #######################################################################
+
+    @staticmethod
+    def _normalize_bad_data_indices(
+        bad_data_index,
+        bad_data_indices,
+    ):
+
+        indices = []
+
+        if bad_data_indices is not None:
+            indices.extend(
+                int(idx)
+                for idx in bad_data_indices
+            )
+
         if bad_data_index is not None:
-            idx = int(bad_data_index)
-            if 0 <= idx < z.size:
-                w[idx] = float(bad_data_weight)
-        W = np.diag(w)
+            indices.append(
+                int(bad_data_index)
+            )
 
-        active_indices = np.arange(z.size, dtype=int)
-        if bad_data_index is not None:
-            active_indices = active_indices[active_indices != int(bad_data_index)]
+        # Remove duplicates while preserving order.
+        return list(dict.fromkeys(indices))
 
-        if x_hat.size != z.size and x_hat.size == 6 and z.size == 12:
-            x_hat = x_hat.copy()
+    #######################################################################
+    # Build weight matrix
+    #######################################################################
 
-        n_meas = z.size
-        n_states = max(1, x_hat.size)
-        chi2_result = ChiSquaredTest().test_for_bad_data(residual, np.linalg.pinv(W), n_meas, n_states)
-        return x_hat, residual, W, active_indices, chi2_result
+    @staticmethod
+    def _build_weight_matrix(
+        R,
+        bad_data_indices,
+        bad_data_weight,
+    ):
 
+        base_diag = np.diag(
+            np.linalg.inv(R)
+        )
 
-__all__ = ["WeightedLeastSquares"]
+        weights = np.ones(
+            len(base_diag)
+        )
+
+        for idx in bad_data_indices:
+            if 0 <= idx < len(weights):
+                weights[idx] = (
+                    bad_data_weight ** 2
+                )
+
+        W = np.diag(
+            base_diag * weights
+        )
+
+        return W
+
+    #######################################################################
+    # Solve WLS
+    #######################################################################
+
+    def solve(
+        self,
+        z,
+        x0,
+        bad_data_index=None,
+        bad_data_indices=None,
+        bad_data_weight=0.1,
+    ):
+        """
+        Solve the nonlinear WLS state-estimation problem.
+
+        Parameters
+        ----------
+        z : ndarray
+            Measurement vector.
+
+        x0 : ndarray
+            Initial state vector.
+
+        bad_data_index : int, optional
+            Single measurement index to down-weight.
+
+        bad_data_indices : iterable, optional
+            Measurement indices to down-weight.
+
+        bad_data_weight : float
+            Relative weight factor. A value of 0.0 completely
+            excludes the selected measurements from the WLS
+            calculation.
+
+        Returns
+        -------
+        x : ndarray
+            Estimated state.
+
+        r : ndarray
+            Final residual vector.
+
+        W : ndarray
+            Final weight matrix.
+
+        active_indices : ndarray
+            Indices having non-zero WLS weight.
+        """
+
+        z = np.asarray(
+            z,
+            dtype=float,
+        )
+
+        x = np.asarray(
+            x0,
+            dtype=float,
+        ).copy()
+
+        bad_indices = self._normalize_bad_data_indices(
+            bad_data_index,
+            bad_data_indices,
+        )
+
+        ###################################################################
+        # Covariance and weights
+        ###################################################################
+
+        R = self._build_covariance_matrix()
+
+        W = self._build_weight_matrix(
+            R,
+            bad_indices,
+            bad_data_weight,
+        )
+
+        active_indices = np.flatnonzero(
+            np.diag(W) > 0.0
+        )
+
+        ###################################################################
+        # Header
+        ###################################################################
+
+        print("\n==============================================")
+        print(" Weighted Least Squares")
+        print("==============================================")
+
+        if bad_indices:
+
+            print(
+                "Isolating measurement indices "
+                f"{bad_indices} with weight "
+                f"{bad_data_weight:.3f}"
+            )
+
+            print(
+                "Active measurement indices : "
+                f"{active_indices}"
+            )
+
+        ###################################################################
+        # Gauss-Newton iterations
+        ###################################################################
+
+        for iteration in range(
+            self.max_iterations
+        ):
+
+            print(
+                f"\nIteration {iteration + 1}"
+            )
+
+            ###############################################################
+            # Measurement prediction
+            ###############################################################
+
+            h = measurement_model(x)
+
+            ###############################################################
+            # Residual
+            ###############################################################
+
+            r = z - h
+
+            ###############################################################
+            # Analytical Jacobian
+            ###############################################################
+
+            H = compute_jacobian(x)
+
+            ###############################################################
+            # Gain matrix
+            ###############################################################
+
+            G = H.T @ W @ H
+
+            ###############################################################
+            # Gradient
+            ###############################################################
+
+            g = H.T @ W @ r
+
+            ###############################################################
+            # State correction
+            ###############################################################
+
+            try:
+
+                dx = np.linalg.solve(
+                    G,
+                    g,
+                )
+
+            except np.linalg.LinAlgError:
+
+                print(
+                    "Gain matrix is singular."
+                )
+
+                return (
+                    x,
+                    r,
+                    W,
+                    active_indices,
+                )
+
+            ###############################################################
+            # Update state
+            ###############################################################
+
+            x = x + dx
+
+            ###############################################################
+            # Display convergence information
+            ###############################################################
+
+            print("\nCurrent Magnitudes")
+
+            V = state_to_voltage(x)
+            I = compute_currents(V)
+
+            print(
+                np.abs(I)
+            )
+
+            print("\nResidual Norm")
+            print(
+                np.linalg.norm(r)
+            )
+
+            print("\nCorrection Norm")
+            print(
+                np.linalg.norm(dx)
+            )
+
+            ###############################################################
+            # Convergence
+            ###############################################################
+
+            if np.linalg.norm(dx) < self.tolerance:
+
+                print("\nConverged.")
+                break
+
+        ###################################################################
+        # Final consistency check
+        ###################################################################
+
+        V = state_to_voltage(x)
+        I = compute_currents(V)
+
+        print("\n==============================================")
+        print(" Current Measurement Consistency")
+        print("==============================================")
+
+        for bus in range(NUM_BUSES):
+
+            idx = 4 * bus
+
+            measured_mag = z[
+                idx + 2
+            ]
+
+            measured_ang = np.degrees(
+                z[idx + 3]
+            )
+
+            predicted_mag = np.abs(
+                I[bus]
+            )
+
+            predicted_ang = np.degrees(
+                np.angle(I[bus])
+            )
+
+            if idx in bad_indices:
+
+                status = " [ISOLATED]"
+
+            else:
+
+                status = ""
+
+            print(
+                f"\nBus {bus + 1}{status}"
+            )
+
+            print(
+                "Measured Current Magnitude  : "
+                f"{measured_mag:.6f}"
+            )
+
+            print(
+                "Predicted Current Magnitude : "
+                f"{predicted_mag:.6f}"
+            )
+
+            print(
+                "Measured Current Angle      : "
+                f"{measured_ang:.6f} deg"
+            )
+
+            print(
+                "Predicted Current Angle     : "
+                f"{predicted_ang:.6f} deg"
+            )
+
+        ###################################################################
+        # Chi-squared test
+        ###################################################################
+
+        print("\n==============================================")
+        print(" Chi-Squared Test (Bad Data Detection)")
+        print("==============================================")
+
+        R = self._build_covariance_matrix()
+        R_inv = np.linalg.inv(R)
+
+        chi2_tester = ChiSquaredTest(confidence_level=0.95)
+        chi2_result = chi2_tester.test_for_bad_data(
+            r,
+            R_inv,
+            len(z),
+            len(x)
+        )
+
+        print(f"Test Statistic (J2)     : {chi2_result['test_statistic']:.8f}")
+        print(f"Critical Value          : {chi2_result['critical_value']:.8f}")
+        print(f"Degrees of Freedom      : {chi2_result['degrees_of_freedom']}")
+        print(f"P-value                 : {chi2_result['p_value']:.6f}")
+        print(f"Bad Data Detected       : {chi2_result['bad_data_detected']}")
+        print(f"Confidence (1-p)        : {chi2_result['confidence']:.6f}")
+
+        # Check for suspect measurements
+        suspect = chi2_tester.identify_suspect_measurements(r, R_inv)
+        if suspect["count"] > 0:
+            print(f"\nSuspect Measurements    : {suspect['count']}")
+            print(f"Indices                 : {suspect['indices']}")
+
+        ###################################################################
+        # Final state
+        ###################################################################
+
+        print("\n==============================================")
+        print(" Final Estimated State")
+        print("==============================================")
+
+        print(x)
+
+        return (
+            x,
+            r,
+            W,
+            active_indices,
+            chi2_result,
+        )

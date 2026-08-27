@@ -1,0 +1,229 @@
+==============================================================================
+ NEURAL ACTIVE FAULT MANAGEMENT + WLS DEMONSTRATION
+ V4.2 — AUTOMATIC FAULT-WINDOW SELECTION
+==============================================================================
+
+Loading model:
+neural_controller/neural_active_controller_v42.joblib
+Model loaded successfully.
+
+
+==============================================================================
+ CASE: NORMAL
+==============================================================================
+CSV: scenario_data/normal_r03.csv
+
+SELECTED V4.2 INFERENCE WINDOW
+------------------------------------------------------------------------------
+Sample index     : 859
+Time             : 0.859000 s
+PDC window       : 20 samples
+
+NEURAL CONTROLLER
+------------------------------------------------------------------------------
+Fault type       : NORMAL
+Faulty PMU       : NONE
+Type confidence  : 0.9897
+Timing confidence: 0.0000
+PMU confidence   : 1.0000
+Neural confidence: 0.9897
+Management state : NORMAL
+Action           : ACCEPT ALL PMUs
+
+NEURAL → WLS WEIGHTS
+------------------------------------------------------------------------------
+Measurement order:
+  [Vmag, Vangle, Imag, Iangle] per PMU
+
+PMU1 : [1.0, 1.0, 1.0, 1.0]
+PMU2 : [1.0, 1.0, 1.0, 1.0]
+PMU3 : [1.0, 1.0, 1.0, 1.0]
+
+STATE ESTIMATION
+------------------------------------------------------------------------------
+Measurement dimension: 12
+State dimension      : 6
+
+Estimated bus states:
+  Bus 1: |V| = 1.005662 pu, angle = -89.957198 deg
+  Bus 2: |V| = 1.000485 pu, angle = -91.955434 deg
+  Bus 3: |V| = 0.997859 pu, angle = -93.945927 deg
+
+WLS RESULT
+------------------------------------------------------------------------------
+Residual norm : 0.01087876
+
+WLS diagonal:
+[10000. 10000.   100.   100. 10000. 10000.   100.   100. 10000. 10000.
+   100.   100.]
+
+==============================================================================
+ COMPLETED: NORMAL
+==============================================================================
+
+
+==============================================================================
+ CASE: BAD_DATA - PMU2
+==============================================================================
+CSV: scenario_data/PMU2_bad_data_r03.csv
+
+SELECTED V4.2 INFERENCE WINDOW
+------------------------------------------------------------------------------
+Sample index     : 1959
+Time             : 1.959000 s
+PDC window       : 20 samples
+
+NEURAL CONTROLLER
+------------------------------------------------------------------------------
+Fault type       : BAD_DATA
+Faulty PMU       : PMU2
+Type confidence  : 0.9972
+Timing confidence: 0.0000
+PMU confidence   : 0.9971
+Neural confidence: 0.9971
+Management state : FAULT
+Action           : DOWN-WEIGHT PMU2
+
+NEURAL → WLS WEIGHTS
+------------------------------------------------------------------------------
+Measurement order:
+  [Vmag, Vangle, Imag, Iangle] per PMU
+
+PMU1 : [1.0, 1.0, 1.0, 1.0]
+PMU2 : [0.1, 0.1, 0.1, 0.1]
+PMU3 : [1.0, 1.0, 1.0, 1.0]
+
+STATE ESTIMATION
+------------------------------------------------------------------------------
+Measurement dimension: 12
+State dimension      : 6
+
+Estimated bus states:
+  Bus 1: |V| = 1.005837 pu, angle = -89.898141 deg
+  Bus 2: |V| = 1.001045 pu, angle = -91.875174 deg
+  Bus 3: |V| = 0.998719 pu, angle = -93.877045 deg
+
+WLS RESULT
+------------------------------------------------------------------------------
+Residual norm : 0.34238021
+
+WLS diagonal:
+[1.e+04 1.e+04 1.e+02 1.e+02 1.e+02 1.e+02 1.e+00 1.e+00 1.e+04 1.e+04
+ 1.e+02 1.e+02]
+
+==============================================================================
+ COMPLETED: BAD_DATA - PMU2
+==============================================================================
+
+
+==============================================================================
+ CASE: SYNC - PMU2
+==============================================================================
+CSV: scenario_data/PMU2_sync_r03.csv
+
+SELECTED V4.2 INFERENCE WINDOW
+------------------------------------------------------------------------------
+Sample index     : 2199
+Time             : 2.199000 s
+PDC window       : 20 samples
+
+NEURAL CONTROLLER
+------------------------------------------------------------------------------
+Fault type       : SYNC
+Faulty PMU       : PMU2
+Type confidence  : 0.9284
+Timing confidence: 0.8655
+PMU confidence   : 0.9605
+Neural confidence: 0.8655
+Management state : FAULT
+Action           : DOWN-WEIGHT PMU2 AND APPLY PHASE CHECK
+
+NEURAL → WLS WEIGHTS
+------------------------------------------------------------------------------
+Measurement order:
+  [Vmag, Vangle, Imag, Iangle] per PMU
+
+PMU1 : [1.0, 1.0, 1.0, 1.0]
+PMU2 : [1.0, 0.1, 1.0, 0.1]
+PMU3 : [1.0, 1.0, 1.0, 1.0]
+
+STATE ESTIMATION
+------------------------------------------------------------------------------
+Measurement dimension: 12
+State dimension      : 6
+
+Estimated bus states:
+  Bus 1: |V| = 1.004884 pu, angle = -90.044183 deg
+  Bus 2: |V| = 1.000319 pu, angle = -92.013033 deg
+  Bus 3: |V| = 0.980308 pu, angle = -94.016038 deg
+
+WLS RESULT
+------------------------------------------------------------------------------
+Residual norm : 0.23754610
+
+WLS diagonal:
+[1.e+04 1.e+04 1.e+02 1.e+02 1.e+04 1.e+02 1.e+02 1.e+00 1.e+04 1.e+04
+ 1.e+02 1.e+02]
+
+==============================================================================
+ COMPLETED: SYNC - PMU2
+==============================================================================
+
+
+==============================================================================
+ CASE: CLOCK_DRIFT - PMU2
+==============================================================================
+CSV: scenario_data/PMU2_clock_drift_r03.csv
+
+SELECTED V4.2 INFERENCE WINDOW
+------------------------------------------------------------------------------
+Sample index     : 2999
+Time             : 2.999000 s
+PDC window       : 20 samples
+
+NEURAL CONTROLLER
+------------------------------------------------------------------------------
+Fault type       : CLOCK_DRIFT
+Faulty PMU       : PMU2
+Type confidence  : 1.0000
+Timing confidence: 0.9607
+PMU confidence   : 1.0000
+Neural confidence: 0.9607
+Management state : FAULT
+Action           : DOWN-WEIGHT PMU2 AND APPLY TIMING CHECK
+
+NEURAL → WLS WEIGHTS
+------------------------------------------------------------------------------
+Measurement order:
+  [Vmag, Vangle, Imag, Iangle] per PMU
+
+PMU1 : [1.0, 1.0, 1.0, 1.0]
+PMU2 : [0.1, 0.1, 0.1, 0.1]
+PMU3 : [1.0, 1.0, 1.0, 1.0]
+
+STATE ESTIMATION
+------------------------------------------------------------------------------
+Measurement dimension: 12
+State dimension      : 6
+
+Estimated bus states:
+  Bus 1: |V| = 1.004550 pu, angle = -89.755409 deg
+  Bus 2: |V| = 0.999735 pu, angle = -91.738953 deg
+  Bus 3: |V| = 0.997693 pu, angle = -93.764234 deg
+
+WLS RESULT
+------------------------------------------------------------------------------
+Residual norm : 0.84684340
+
+WLS diagonal:
+[1.e+04 1.e+04 1.e+02 1.e+02 1.e+02 1.e+02 1.e+00 1.e+00 1.e+04 1.e+04
+ 1.e+02 1.e+02]
+
+==============================================================================
+ COMPLETED: CLOCK_DRIFT - PMU2
+==============================================================================
+
+
+==============================================================================
+ ALL FOUR NEURAL → WLS CASES COMPLETE
+==============================================================================
