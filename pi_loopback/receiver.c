@@ -14,12 +14,12 @@
  * Requires: pigpio (http://abyz.me.uk/rpi/pigpio/), run as root.
  *
  * Build:  make
- * Run:    sudo ./receiver -g 23 -a 1.0 -r 2000 -d 5 -o capture.csv
+ * Run:    sudo ./receiver -g 23 -a 1.0 -r 1000 -d 5 -o capture.csv
  *
  * Options:
  *   -g <pin>    BCM GPIO number wired to the transmitter's output    default 23
  *   -a <Im>     Peak amplitude used by the transmitter (0.0-1.0]     default 1.0
- *   -r <Hz>     Bin rate == transmitter's sample rate                default 2000
+ *   -r <Hz>     Bin rate == transmitter's sample rate                default 1000
  *   -d <sec>    Duration in seconds, 0 = run until Ctrl+C            default 0
  *   -o <file>   Output CSV path                                      default capture.csv
  */
@@ -66,7 +66,7 @@ static void edge_cb(int gpio, int level, uint32_t tick) {
 int main(int argc, char **argv) {
     int gpio = 23;
     double amplitude = 1.0;
-    double sample_rate = 2000.0;
+    double sample_rate = 1000.0;
     double duration = 0.0;
     const char *out_path = "capture.csv";
 

@@ -20,7 +20,7 @@
  * Requires: pigpio (http://abyz.me.uk/rpi/pigpio/), run as root.
  *
  * Build:  make
- * Run:    sudo ./loopback_combined -o 18 -i 23 -f 50 -c 20000 -a 1.0 -r 2000 -d 5 -O capture.csv
+ * Run:    sudo ./loopback_combined -o 18 -i 23 -f 50 -c 20000 -a 1.0 -r 1000 -d 5 -O capture.csv
  *
  * Options:
  *   -o <pin>    Output GPIO driving the sine (hardware PWM capable)   default 18
@@ -28,7 +28,7 @@
  *   -f <Hz>     Sine frequency                                        default 50
  *   -c <Hz>     PWM carrier frequency                                 default 20000
  *   -a <Im>     Peak amplitude, normalized 0.0-1.0                    default 1.0
- *   -r <Hz>     Sample/bin rate (shared by TX duty updates and RX bins) default 2000
+ *   -r <Hz>     Sample/bin rate (20 samples/cycle at 50 Hz by default)  default 1000
  *   -d <sec>    Duration in seconds                                   default 5
  *   -O <file>   Output CSV path                                       default capture.csv
  */
@@ -75,7 +75,7 @@ int main(int argc, char **argv) {
     double sine_freq = 50.0;
     unsigned carrier_freq = 20000;
     double amplitude = 1.0;
-    double sample_rate = 2000.0;
+    double sample_rate = 1000.0;
     double duration = 5.0;
     const char *out_path = "capture.csv";
 

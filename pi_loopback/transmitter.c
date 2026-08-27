@@ -11,14 +11,14 @@
  *           (sudo pigpiod not required; this uses the pigpio C library directly).
  *
  * Build:  make
- * Run:    sudo ./transmitter -g 18 -f 50 -c 20000 -a 1.0 -r 2000 -d 5
+ * Run:    sudo ./transmitter -g 18 -f 50 -c 20000 -a 1.0 -r 1000 -d 5
  *
  * Options:
  *   -g <pin>    BCM GPIO number for hardware PWM (12, 13, 18 or 19 on Pi 4B)
  *   -f <Hz>     Sine frequency  (w = 2*pi*f)               default 50
  *   -c <Hz>     PWM carrier frequency                       default 20000
  *   -a <Im>     Peak amplitude, normalized 0.0-1.0           default 1.0
- *   -r <Hz>     Sample rate (duty-cycle update rate)         default 2000
+ *   -r <Hz>     Sample rate (20 samples/cycle at 50 Hz)      default 1000
  *   -d <sec>    Duration in seconds, 0 = run until Ctrl+C    default 0
  */
 
@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
     double sine_freq = 50.0;
     unsigned carrier_freq = 20000;
     double amplitude = 1.0;
-    double sample_rate = 2000.0;
+    double sample_rate = 1000.0;
     double duration = 0.0;
 
     int opt;

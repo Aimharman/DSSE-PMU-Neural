@@ -11,10 +11,94 @@ Usage:
 """
 
 import argparse
+import csv
+import math
+from collections import deque
+from pathlib import Path
 
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
+
+
+PMU_FIELDS = (
+    "Voltage DFT Real", "Voltage DFT Imag", "Voltage Magnitude", "Voltage Phase",
+    "Voltage DFT RMS", "Current DFT Real", "Current DFT Imag", "Current Magnitude",
+    "Current Phase", "Current DFT RMS", "Sync Offset", "Sync Fault",
+    "Sync Fault Active", "Mag Noise", "Phase Noise", "Clock Drift",
+    "Clock Drift Fault", "Packet Loss", "Bad Data",
+)
+
+
+def canonical_columns():
+    columns = [
+        "Time (s)", "Voltage 1 (V)", "Current 1 (A)", "Voltage 2 (V)",
+        "Current 2 (A)", "Voltage 3 (V)", "Current 3 (A)", "Peak (A)",
+        "Signal Angle (deg)", "Delta t (s)",
+    ]
+    for pmu in range(1, 4):
+        columns.extend(f"PMU{pmu} {field}" for field in PMU_FIELDS)
+    return columns
+
+
+def phasor(samples):
+    count = len(samples)
+    real = sum(value * math.cos(2.0 * math.pi * index / count)
+               for index, value in enumerate(samples))
+    imag = -sum(value * math.sin(2.0 * math.pi * index / count)
+                for index, value in enumerate(samples))
+    magnitude = 2.0 * math.hypot(real, imag) / count
+    return real, imag, magnitude, math.degrees(math.atan2(imag, real)), magnitude / math.sqrt(2.0)
+
+
+def export_pmu_csv(input_path, output_path, voltage_rms=220.0):
+    """Export a 50 Hz/1 kHz loopback capture in the canonical scenario schema."""
+    peak_voltage = voltage_rms * math.sqrt(2.0)
+    voltage_samples = deque(maxlen=20)
+    written = 0
+    with open(input_path, newline="") as capture:
+        reader = csv.DictReader(capture)
+        required = {"Time (s)", "Reconstructed Value", "Poll Samples"}
+        if reader.fieldnames is None or not required.issubset(reader.fieldnames):
+            raise ValueError("input must be a loopback_combined capture CSV")
+        capture_rows = list(reader)
+
+    for index, raw_row in enumerate(capture_rows):
+        if int(raw_row["Poll Samples"]) != 0:
+            continue
+        if index == 0 or index == len(capture_rows) - 1:
+            raise ValueError("capture starts or ends with an empty sampling bin")
+        previous_row = capture_rows[index - 1]
+        next_row = capture_rows[index + 1]
+        if int(previous_row["Poll Samples"]) == 0 or int(next_row["Poll Samples"]) == 0:
+            raise ValueError("capture has consecutive empty sampling bins")
+        raw_row["Reconstructed Value"] = str(
+            (float(previous_row["Reconstructed Value"]) + float(next_row["Reconstructed Value"])) / 2.0
+        )
+
+    with open(output_path, "w", newline="") as output:
+        writer = csv.writer(output)
+        writer.writerow(canonical_columns())
+        for index, raw_row in enumerate(capture_rows):
+            time_s = float(raw_row["Time (s)"])
+            if not math.isclose(time_s, index * 0.001, rel_tol=0.0, abs_tol=1e-6):
+                raise ValueError("capture must be sampled at 1000 Hz")
+            voltage = float(raw_row["Reconstructed Value"]) * peak_voltage
+            voltage_samples.append(voltage)
+            voltage_dft = phasor(voltage_samples) if len(voltage_samples) == 20 else (math.nan,) * 5
+            current_dft = (0.0,) * 5 if len(voltage_samples) == 20 else (math.nan,) * 5
+            row = [time_s, voltage, 0.0, voltage, 0.0, voltage, 0.0, 0.0,
+                   (time_s * 50.0 * 360.0) % 360.0, 0.001]
+            for _ in range(3):
+                row.extend(voltage_dft)
+                row.extend(current_dft)
+                row.extend([0.0, math.nan, False, math.nan, math.nan, math.nan,
+                            False, False, False])
+            writer.writerow(row)
+            written += 1
+    if written < 20:
+        raise ValueError("capture needs at least 20 valid samples")
+    return written
 
 
 def main():
@@ -22,7 +106,13 @@ def main():
     parser.add_argument("csv_path", help="Path to a captured CSV (e.g. pi_loopback/capture.csv)")
     parser.add_argument("--time-column", default="Time (s)", help="Name of the time column")
     parser.add_argument("--column", default="Reconstructed Value", help="Name of the value column to plot")
+    parser.add_argument("--export-pmu", type=Path, help="Write a 220 Vrms canonical PMU scenario CSV before plotting")
+    parser.add_argument("--voltage-rms", type=float, default=220.0, help="Voltage calibration used by --export-pmu")
     args = parser.parse_args()
+
+    if args.export_pmu:
+        count = export_pmu_csv(args.csv_path, args.export_pmu, args.voltage_rms)
+        print(f"Wrote {count} PMU samples to {args.export_pmu}")
 
     df = pd.read_csv(args.csv_path)
     t = df[args.time_column].to_numpy()

@@ -16,7 +16,7 @@ TX_LOG="tx.log"
 RX_CSV="capture.csv"
 
 echo "Starting transmitter on gpio${OUT_GPIO} (sine ${SINE_HZ}Hz, ${DURATION}s)..."
-./transmitter -g "$OUT_GPIO" -f "$SINE_HZ" -c 20000 -a 1.0 -r 2000 -d "$DURATION" > "$TX_LOG" 2>&1 &
+./transmitter -g "$OUT_GPIO" -f "$SINE_HZ" -c 20000 -a 1.0 -r 1000 -d "$DURATION" > "$TX_LOG" 2>&1 &
 TX_PID=$!
 
 # give the transmitter a moment to initialise pigpio and start PWM
@@ -29,7 +29,7 @@ if ! kill -0 "$TX_PID" 2>/dev/null; then
 fi
 
 echo "Starting receiver on gpio${IN_GPIO} -> $RX_CSV ..."
-./receiver -g "$IN_GPIO" -a 1.0 -r 2000 -d "$DURATION" -o "$RX_CSV"
+./receiver -g "$IN_GPIO" -a 1.0 -r 1000 -d "$DURATION" -o "$RX_CSV"
 
 wait "$TX_PID" || true
 
