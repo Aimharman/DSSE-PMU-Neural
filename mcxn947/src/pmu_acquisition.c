@@ -95,6 +95,7 @@ static void PMU_InitTriggerTimer(void)
 
     CLOCK_EnableClock(kCLOCK_InputMux0);
     CLOCK_SetupClockCtrl(kCLOCK_FRO12MHZ_ENA);
+    INPUTMUX_Init(INPUTMUX0);
     INPUTMUX_EnableSignal(INPUTMUX0, kINPUTMUX_Adc0FifoARequestToDma0Ch21Ena, true);
     INPUTMUX_AttachSignal(INPUTMUX0, 0U, kINPUTMUX_Lptmr0ToAdc0Trigger);
 
