@@ -48,6 +48,12 @@ include(${ProjDirPath}/config.cmake)
 
 add_executable(${MCUX_SDK_PROJECT_NAME}
 "${ProjDirPath}/src/main.c"
+"${ProjDirPath}/src/dac_waveform.c"
+"${ProjDirPath}/src/dac_waveform.h"
+"${ProjDirPath}/src/pmu_acquisition.c"
+"${ProjDirPath}/src/pmu_acquisition.h"
+"${ProjDirPath}/src/pmu_protocol.c"
+"${ProjDirPath}/src/pmu_protocol.h"
 "${ProjDirPath}/src/pin_mux.c"
 "${ProjDirPath}/src/pin_mux.h"
 "${ProjDirPath}/src/peripherals.c"

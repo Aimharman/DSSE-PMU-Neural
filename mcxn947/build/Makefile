@@ -249,6 +249,30 @@ media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.s
 .PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.s
 
+media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.obj: media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.obj
+
+# target to build an object file
+media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj
+
+media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.i: media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.i
+
+# target to preprocess a source file
+media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.i
+
+media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.s: media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.s
+
+# target to generate assembly for a file
+media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.s
+
 media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.obj: media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj
 .PHONY : media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.obj
 
@@ -353,6 +377,54 @@ media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.s
 .PHONY : media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.s
 
+media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.obj: media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.obj
+
+# target to build an object file
+media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj
+
+media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.i: media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.i
+
+# target to preprocess a source file
+media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.i
+
+media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.s: media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.s
+
+# target to generate assembly for a file
+media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.s
+
+media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.obj: media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.obj
+
+# target to build an object file
+media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj
+
+media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.i: media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.i
+
+# target to preprocess a source file
+media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.i
+
+media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.s: media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.s
+
+# target to generate assembly for a file
+media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.s
+
 media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.obj: media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj
 .PHONY : media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.obj
 
@@ -376,6 +448,54 @@ media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.s: media/ankesh/g
 media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.s
 .PHONY : media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.s
+
+media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.obj: media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.obj
+
+# target to build an object file
+media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj
+
+media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.i: media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.i
+
+# target to preprocess a source file
+media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.i
+
+media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.s: media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.s
+
+# target to generate assembly for a file
+media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.s
+
+media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.obj: media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.obj
+
+# target to build an object file
+media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj
+
+media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.i: media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.i
+
+# target to preprocess a source file
+media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.i
+
+media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.s: media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.s
+
+# target to generate assembly for a file
+media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.s
 
 media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.obj: media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj
 .PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.obj
@@ -425,6 +545,30 @@ media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.s
 .PHONY : media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.s
 
+media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.obj: media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.obj
+
+# target to build an object file
+media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj
+
+media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.i: media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.i
+
+# target to preprocess a source file
+media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.i
+
+media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.s: media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.s
+
+# target to generate assembly for a file
+media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.s
+
 media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.obj: media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj
 .PHONY : media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.obj
 
@@ -448,6 +592,30 @@ media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.s: media/ankesh
 media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.s
 .PHONY : media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.s
+
+media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.obj: media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.obj
+
+# target to build an object file
+media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj
+
+media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.i: media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.i
+
+# target to preprocess a source file
+media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.i
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.i
+
+media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.s: media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.s
+
+# target to generate assembly for a file
+media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.s
+.PHONY : media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.s
 
 media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.obj: media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj
 .PHONY : media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.obj
@@ -625,6 +793,30 @@ media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.s
 .PHONY : media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.s
 
+src/dac_waveform.obj: src/dac_waveform.c.obj
+.PHONY : src/dac_waveform.obj
+
+# target to build an object file
+src/dac_waveform.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj
+.PHONY : src/dac_waveform.c.obj
+
+src/dac_waveform.i: src/dac_waveform.c.i
+.PHONY : src/dac_waveform.i
+
+# target to preprocess a source file
+src/dac_waveform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.i
+.PHONY : src/dac_waveform.c.i
+
+src/dac_waveform.s: src/dac_waveform.c.s
+.PHONY : src/dac_waveform.s
+
+# target to generate assembly for a file
+src/dac_waveform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.s
+.PHONY : src/dac_waveform.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -697,6 +889,54 @@ src/pin_mux.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.s
 .PHONY : src/pin_mux.c.s
 
+src/pmu_acquisition.obj: src/pmu_acquisition.c.obj
+.PHONY : src/pmu_acquisition.obj
+
+# target to build an object file
+src/pmu_acquisition.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj
+.PHONY : src/pmu_acquisition.c.obj
+
+src/pmu_acquisition.i: src/pmu_acquisition.c.i
+.PHONY : src/pmu_acquisition.i
+
+# target to preprocess a source file
+src/pmu_acquisition.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.i
+.PHONY : src/pmu_acquisition.c.i
+
+src/pmu_acquisition.s: src/pmu_acquisition.c.s
+.PHONY : src/pmu_acquisition.s
+
+# target to generate assembly for a file
+src/pmu_acquisition.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.s
+.PHONY : src/pmu_acquisition.c.s
+
+src/pmu_protocol.obj: src/pmu_protocol.c.obj
+.PHONY : src/pmu_protocol.obj
+
+# target to build an object file
+src/pmu_protocol.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj
+.PHONY : src/pmu_protocol.c.obj
+
+src/pmu_protocol.i: src/pmu_protocol.c.i
+.PHONY : src/pmu_protocol.i
+
+# target to preprocess a source file
+src/pmu_protocol.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.i
+.PHONY : src/pmu_protocol.c.i
+
+src/pmu_protocol.s: src/pmu_protocol.c.s
+.PHONY : src/pmu_protocol.s
+
+# target to generate assembly for a file
+src/pmu_protocol.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mcxn947_base.elf.dir/build.make CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.s
+.PHONY : src/pmu_protocol.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -721,6 +961,9 @@ help:
 	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.s"
+	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.obj"
+	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.i"
+	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.s"
 	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.s"
@@ -734,18 +977,36 @@ help:
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.s"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.obj"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.i"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.s"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.obj"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.i"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.s"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.s"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.obj"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.i"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.s"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.obj"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.i"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.s"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.s"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.s"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.obj"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.i"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.s"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.s"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.obj"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.i"
+	@echo "... media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.s"
 	@echo "... media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.obj"
 	@echo "... media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.i"
 	@echo "... media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.s"
@@ -768,6 +1029,9 @@ help:
 	@echo "... media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.obj"
 	@echo "... media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.i"
 	@echo "... media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.s"
+	@echo "... src/dac_waveform.obj"
+	@echo "... src/dac_waveform.i"
+	@echo "... src/dac_waveform.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -777,6 +1041,12 @@ help:
 	@echo "... src/pin_mux.obj"
 	@echo "... src/pin_mux.i"
 	@echo "... src/pin_mux.s"
+	@echo "... src/pmu_acquisition.obj"
+	@echo "... src/pmu_acquisition.i"
+	@echo "... src/pmu_acquisition.s"
+	@echo "... src/pmu_protocol.obj"
+	@echo "... src/pmu_protocol.i"
+	@echo "... src/pmu_protocol.s"
 .PHONY : help
 
 
