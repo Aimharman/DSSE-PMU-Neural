@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S
+
+/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S
+
