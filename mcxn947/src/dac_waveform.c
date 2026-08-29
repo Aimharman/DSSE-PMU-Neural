@@ -57,7 +57,7 @@ void DAC_WaveformInit(void)
     CLOCK_SetClkDiv(kCLOCK_DivDac0Clk, 1U);
     CLOCK_AttachClk(kFRO12M_to_DAC0);
     CLOCK_SetupClockCtrl(kCLOCK_FRO12MHZ_ENA);
-    SPC_EnableActiveModeAnalogModules(SPC0, kSPC_controlVref);
+    SPC_EnableActiveModeAnalogModules(SPC0, kSPC_controlVref | kSPC_controlDac0);
 
     DAC_GetDefaultConfig(&dac_config);
     dac_config.fifoTriggerMode = kDAC_FIFOTriggerByHardwareMode;

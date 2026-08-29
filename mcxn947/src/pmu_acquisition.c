@@ -132,3 +132,8 @@ bool PMU_AcquisitionTakeWindow(pmu_sample_window_t *window)
     }
     return true;
 }
+
+uint32_t PMU_AcquisitionCompletedWindowCount(void)
+{
+    return s_completed_windows;
+}

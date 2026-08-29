@@ -17,5 +17,6 @@ typedef struct
 
 void PMU_AcquisitionInit(void);
 bool PMU_AcquisitionTakeWindow(pmu_sample_window_t *window);
+uint32_t PMU_AcquisitionCompletedWindowCount(void);
 
 #endif

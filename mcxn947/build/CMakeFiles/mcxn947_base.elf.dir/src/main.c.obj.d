@@ -19,6 +19,7 @@ CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/./fsl_clock.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/./fsl_reset.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/gpio/./fsl_gpio.h \
+ /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../utilities/debug_console_lite/fsl_debug_console.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lpflexcomm/lpuart/./fsl_lpuart.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lpflexcomm/./fsl_lpflexcomm.h \
  /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.h
@@ -41,6 +42,7 @@ CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: \
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/./fsl_clock.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/./fsl_reset.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/gpio/./fsl_gpio.h:
+/media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../utilities/debug_console_lite/fsl_debug_console.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lpflexcomm/lpuart/./fsl_lpuart.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lpflexcomm/./fsl_lpflexcomm.h:
 /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.h:
