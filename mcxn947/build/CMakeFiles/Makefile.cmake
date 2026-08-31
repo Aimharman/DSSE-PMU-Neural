@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/CMakeLists.txt"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeASMCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/config.cmake"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/flags.cmake"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/config.cmake"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/flags.cmake"
   "/media/ankesh/general/mcux-workspace/core/CMSIS/set_CMSIS.cmake"
   "/media/ankesh/general/mcux-workspace/core/CMSIS/set_CMSIS_DSP_Lib.cmake"
   "/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/set_board_frdmmcxn947.cmake"

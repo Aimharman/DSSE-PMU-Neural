@@ -1,6 +1,6 @@
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj: \
- /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c \
- /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.h \
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c \
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.h \
  /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.h \
  /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/common/./fsl_common.h \
@@ -25,7 +25,7 @@ CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj: \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lpadc/./fsl_lpadc.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lptmr/./fsl_lptmr.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/mcx_spc/./fsl_spc.h
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.h:
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.h:
 /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.h:
 /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/common/./fsl_common.h:

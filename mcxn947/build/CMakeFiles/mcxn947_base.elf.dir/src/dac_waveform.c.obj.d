@@ -1,6 +1,6 @@
 CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj: \
- /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c \
- /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.h \
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c \
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/common/./fsl_common.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/././fsl_device_registers.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/././MCXN947_cm33_core0.h \
@@ -22,7 +22,7 @@ CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj: \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/./fsl_inputmux_connections.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lptmr/./fsl_lptmr.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/mcx_spc/./fsl_spc.h
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.h:
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/common/./fsl_common.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/././fsl_device_registers.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/././MCXN947_cm33_core0.h:

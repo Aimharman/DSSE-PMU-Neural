@@ -1,5 +1,5 @@
 CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: \
- /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c \
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c \
  /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.h \
  /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/common/./fsl_common.h \
@@ -17,10 +17,9 @@ CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/./fsl_reset.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/gpio/./fsl_gpio.h \
  /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../utilities/debug_console_lite/fsl_debug_console.h \
- /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lpadc/./fsl_lpadc.h \
- /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/dac_1/./fsl_dac.h \
- /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/mcx_spc/./fsl_spc.h \
- /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.h
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.h \
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.h \
+ /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.h
 /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.h:
 /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/common/./fsl_common.h:
@@ -38,7 +37,6 @@ CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: \
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/./fsl_reset.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/gpio/./fsl_gpio.h:
 /media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../utilities/debug_console_lite/fsl_debug_console.h:
-/media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/lpadc/./fsl_lpadc.h:
-/media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/dac_1/./fsl_dac.h:
-/media/ankesh/general/mcux-workspace/core/devices/MCXN947/../../drivers/mcx_spc/./fsl_spc.h:
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.h:
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.h:
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.h:
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.h:

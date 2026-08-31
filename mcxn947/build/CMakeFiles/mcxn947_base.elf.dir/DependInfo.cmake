@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S" "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj"
-  "/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S" "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj"
+  "/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S" "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj"
+  "/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S" "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src"
   "/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947"
   "/media/ankesh/general/mcux-workspace/examples/frdmmcxn947"
   "/media/ankesh/general/mcux-workspace/core/devices/MCXN947/./."
@@ -69,12 +69,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c" "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj.d"
   "/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c" "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj.d"
   "/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c" "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj.d"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c" "CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj.d"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c" "CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj.d"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c" "CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj.d"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c" "CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj.d"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj.d"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj.d"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c" "CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj.d"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c" "CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj.d"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c" "CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj.d"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c" "CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj.d"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj.d"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj" "gcc" "CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

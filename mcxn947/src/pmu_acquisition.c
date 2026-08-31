@@ -100,6 +100,7 @@ static void PMU_InitTriggerTimer(void)
     INPUTMUX_AttachSignal(INPUTMUX0, 0U, kINPUTMUX_Lptmr0ToAdc0Trigger);
 
     LPTMR_GetDefaultConfig(&timer_config);
+    timer_config.prescalerClockSource = kLPTMR_PrescalerClock_0;
     LPTMR_Init(LPTMR0, &timer_config);
     LPTMR_SetTimerPeriod(LPTMR0, USEC_TO_COUNT(1000000U / PMU_SAMPLE_RATE_HZ, 12000000U));
 }

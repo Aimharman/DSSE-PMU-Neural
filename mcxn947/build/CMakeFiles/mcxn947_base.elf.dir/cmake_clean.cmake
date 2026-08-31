@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "output.map"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf"
-  "/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf.pdb"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf"
+  "/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf.pdb"
   "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj"
   "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj.d"
   "CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj"

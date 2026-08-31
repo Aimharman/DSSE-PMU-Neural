@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-7.0.0-30-generic")
+set(CMAKE_HOST_SYSTEM "Linux-6.14.0-37-generic")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "7.0.0-30-generic")
+set(CMAKE_HOST_SYSTEM_VERSION "6.14.0-37-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/media/ankesh/general/mcux-workspace/core/tools/cmake_toolchain_files/armgcc.cmake")

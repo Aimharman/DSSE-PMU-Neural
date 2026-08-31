@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947
+CMAKE_SOURCE_DIR = /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build
+CMAKE_BINARY_DIR = /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mcxn947_base.elf.dir/depend.make
@@ -70,93 +70,93 @@ include CMakeFiles/mcxn947_base.elf.dir/progress.make
 include CMakeFiles/mcxn947_base.elf.dir/flags.make
 
 CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
-CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c
+CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c
 CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj -c /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj"
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj -c /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c
 
 CMakeFiles/mcxn947_base.elf.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcxn947_base.elf.dir/src/main.c.i"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c > CMakeFiles/mcxn947_base.elf.dir/src/main.c.i
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c > CMakeFiles/mcxn947_base.elf.dir/src/main.c.i
 
 CMakeFiles/mcxn947_base.elf.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcxn947_base.elf.dir/src/main.c.s"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c -o CMakeFiles/mcxn947_base.elf.dir/src/main.c.s
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/main.c -o CMakeFiles/mcxn947_base.elf.dir/src/main.c.s
 
 CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
-CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj: /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c
+CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj: /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c
 CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj -c /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj"
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj -c /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c
 
 CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.i"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c > CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.i
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c > CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.i
 
 CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.s"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c -o CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.s
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/dac_waveform.c -o CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.s
 
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
-CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj: /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c
+CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj: /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj -c /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj"
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj -c /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c
 
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.i"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c > CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.i
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c > CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.i
 
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.s"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.s
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_acquisition.c -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.s
 
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
-CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj: /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c
+CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj: /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj -c /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj"
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj -c /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c
 
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.i"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c > CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.i
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c > CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.i
 
 CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.s"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.s
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pmu_protocol.c -o CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.s
 
 CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
-CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj: /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c
+CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj: /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c
 CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj -c /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj"
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj -c /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c
 
 CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.i"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c > CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.i
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c > CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.i
 
 CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.s"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c -o CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.s
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/pin_mux.c -o CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.s
 
 CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
-CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj: /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c
+CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj: /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c
 CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj -c /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj"
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj -c /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c
 
 CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.i"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c > CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.i
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c > CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.i
 
 CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.s"
-	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c -o CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.s
+	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/src/peripherals.c -o CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.s
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj: /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj -c /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.i: cmake_force
@@ -170,7 +170,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj: /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj -c /media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.i: cmake_force
@@ -184,7 +184,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj: /media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj -c /media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.i: cmake_force
@@ -198,7 +198,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frd
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj: /media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj -c /media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.i: cmake_force
@@ -212,7 +212,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frd
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj: /media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj -c /media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.i: cmake_force
@@ -226,7 +226,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utiliti
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj: /media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj -c /media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.i: cmake_force
@@ -239,7 +239,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utiliti
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj: /media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building ASM object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj -c /media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.i: cmake_force
@@ -252,7 +252,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utiliti
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj: /media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj -c /media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.i: cmake_force
@@ -266,7 +266,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj: /media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj -c /media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.i: cmake_force
@@ -280,7 +280,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj: /media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj -c /media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.i: cmake_force
@@ -294,7 +294,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utiliti
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj: /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj -c /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.i: cmake_force
@@ -308,7 +308,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.i: cmake_force
@@ -322,7 +322,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj: /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj -c /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.i: cmake_force
@@ -336,7 +336,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.i: cmake_force
@@ -350,7 +350,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.i: cmake_force
@@ -364,7 +364,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj: /media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj -c /media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.i: cmake_force
@@ -378,7 +378,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utiliti
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj: /media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj -c /media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.i: cmake_force
@@ -392,7 +392,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utiliti
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.i: cmake_force
@@ -406,7 +406,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj: /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj -c /media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.i: cmake_force
@@ -420,7 +420,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.i: cmake_force
@@ -434,7 +434,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.i: cmake_force
@@ -448,7 +448,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.i: cmake_force
@@ -462,7 +462,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.i: cmake_force
@@ -476,7 +476,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.i: cmake_force
@@ -490,7 +490,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.i: cmake_force
@@ -504,7 +504,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.i: cmake_force
@@ -518,7 +518,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj: /media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj -c /media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.i: cmake_force
@@ -532,7 +532,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj: /media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj -c /media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.i: cmake_force
@@ -546,7 +546,7 @@ CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/compone
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj: CMakeFiles/mcxn947_base.elf.dir/flags.make
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj: /media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj: CMakeFiles/mcxn947_base.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj"
 	/media/ankesh/general/ARM/arm-gnu-toolchain-15.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj -MF CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj.d -o CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj -c /media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c
 
 CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.i: cmake_force
@@ -598,48 +598,48 @@ mcxn947_base_elf_OBJECTS = \
 # External object files for target mcxn947_base.elf
 mcxn947_base_elf_EXTERNAL_OBJECTS =
 
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/build.make
-/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf"
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/main.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/dac_waveform.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/pmu_acquisition.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/pmu_protocol.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/pin_mux.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/src/peripherals.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/board.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/boards/frdmmcxn947/clock_config.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/board.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/examples/frdmmcxn947/clock_config.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_sbrk.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_syscall_stub.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/misc_utilities/fsl_memcpy.S.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/gcc/startup_MCXN947_cm33_core0.S.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/system_MCXN947_cm33_core0.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/debug_console_lite/fsl_debug_console.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_clock.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/edma4/fsl_edma.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_edma_soc.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/common/fsl_common_arm.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/assert/fsl_assert.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/utilities/str/fsl_str.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/vref_1/fsl_vref.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/devices/MCXN947/drivers/fsl_reset.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/mcx_spc/fsl_spc.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lptmr/fsl_lptmr.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/lpuart/fsl_lpuart.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpflexcomm/fsl_lpflexcomm.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/lpadc/fsl_lpadc.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/inputmux/fsl_inputmux.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/gpio/fsl_gpio.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/drivers/dac_1/fsl_dac.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/uart/fsl_adapter_lpuart.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/media/ankesh/general/mcux-workspace/core/components/lists/fsl_component_generic_list.c.obj
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/build.make
+/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf: CMakeFiles/mcxn947_base.elf.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mcxn947_base.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/mcxn947_base.elf.dir/build: /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf
+CMakeFiles/mcxn947_base.elf.dir/build: /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/debug/mcxn947_base.elf
 .PHONY : CMakeFiles/mcxn947_base.elf.dir/build
 
 CMakeFiles/mcxn947_base.elf.dir/clean:
@@ -647,6 +647,6 @@ CMakeFiles/mcxn947_base.elf.dir/clean:
 .PHONY : CMakeFiles/mcxn947_base.elf.dir/clean
 
 CMakeFiles/mcxn947_base.elf.dir/depend:
-	cd /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947 /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947 /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/mcxn947_base.elf.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947 /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947 /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/mcxn947_base.elf.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mcxn947_base.elf.dir/depend
 

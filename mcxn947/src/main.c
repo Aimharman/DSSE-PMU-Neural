@@ -1,249 +1,172 @@
 #include "board.h"
+#include "fsl_common.h"
 #include "fsl_debug_console.h"
-#include "fsl_lpadc.h"
-#include "fsl_dac.h"
-#include "fsl_spc.h"
+#include "fsl_gpio.h"
 #include "pin_mux.h"
+#include "pmu_acquisition.h"
+#include "pmu_protocol.h"
 
-#define TEST_ADC_CHANNEL       2U
-#define TEST_ADC_COMMAND       1U
-#define TEST_ADC_TRIGGER       0U
+/* 1 = run only button test, 0 = run PMU acquisition mode */
+#define APP_BUTTON_TEST_MODE 0U
+/* 1 = enable PMU text diagnostics, 0 = pure binary packet stream on UART */
+#define APP_PMU_TEXT_DIAG_MODE 0U
 
-#define ADC_SAMPLES_PER_LEVEL  16U
-#define DAC_SETTLE_TIME_US     100000U
-#define BETWEEN_LEVELS_US      500000U
+#if APP_PMU_TEXT_DIAG_MODE
+#define APP_PMU_LOG(...) PRINTF(__VA_ARGS__)
+#else
+#define APP_PMU_LOG(...)
+#endif
 
-static const uint16_t g_dac_test_values[] =
+static bool APP_IsButtonPressed(GPIO_Type *gpio, uint32_t pin)
 {
-    496U,
-    1024U,
-    2048U,
-    3072U,
-    3600U
-};
-
-
-/* --------------------------------------------------------------------------
- * DAC initialization
- * -------------------------------------------------------------------------- */
-static void DAC_TestInit(void)
-{
-    dac_config_t dac_config;
-
-    CLOCK_SetClkDiv(kCLOCK_DivDac0Clk, 1U);
-    CLOCK_AttachClk(kFRO12M_to_DAC0);
-    CLOCK_SetupClockCtrl(kCLOCK_FRO12MHZ_ENA);
-
-    SPC_EnableActiveModeAnalogModules(SPC0,
-                                       kSPC_controlVref |
-                                       kSPC_controlDac0);
-
-    DAC_GetDefaultConfig(&dac_config);
-
-    dac_config.fifoTriggerMode = kDAC_FIFOTriggerBySoftwareMode;
-    dac_config.fifoWorkMode = kDAC_FIFOWorkAsNormalMode;
-    dac_config.fifoWatermarkLevel = 0U;
-    dac_config.referenceVoltageSource =
-        kDAC_ReferenceVoltageSourceAlt1;
-
-    DAC_Init(DAC0, &dac_config);
-    DAC_Enable(DAC0, true);
+    return GPIO_PinRead(gpio, pin) == 0U;
 }
 
-
-/* --------------------------------------------------------------------------
- * Set DAC output
- * -------------------------------------------------------------------------- */
-static void DAC_SetTestValue(uint16_t value)
-{
-    DAC_SetData(DAC0, value);
-    DAC_DoSoftwareTriggerFIFO(DAC0);
-}
-
-
-/* --------------------------------------------------------------------------
- * ADC initialization
- * -------------------------------------------------------------------------- */
-static void ADC_TestInit(void)
-{
-    lpadc_config_t adc_config;
-    lpadc_conv_command_config_t command_config;
-    lpadc_conv_trigger_config_t trigger_config;
-
-    CLOCK_SetClkDiv(kCLOCK_DivAdc0Clk, 1U);
-    CLOCK_AttachClk(kFRO12M_to_ADC0);
-
-    SPC_EnableActiveModeAnalogModules(SPC0,
-                                       kSPC_controlVref);
-
-    LPADC_GetDefaultConfig(&adc_config);
-
-    adc_config.enableAnalogPreliminary = true;
-    adc_config.powerUpDelay = 0x10U;
-    adc_config.referenceVoltageSource =
-        kLPADC_ReferenceVoltageAlt3;
-
-    LPADC_Init(ADC0, &adc_config);
-
-    LPADC_DoOffsetCalibration(ADC0);
-    LPADC_DoAutoCalibration(ADC0);
-
-    LPADC_GetDefaultConvCommandConfig(&command_config);
-
-    command_config.channelNumber = TEST_ADC_CHANNEL;
-
-    LPADC_SetConvCommandConfig(ADC0,
-                                TEST_ADC_COMMAND,
-                                &command_config);
-
-    LPADC_GetDefaultConvTriggerConfig(&trigger_config);
-
-    trigger_config.targetCommandId = TEST_ADC_COMMAND;
-    trigger_config.enableHardwareTrigger = false;
-
-    LPADC_SetConvTriggerConfig(ADC0,
-                               TEST_ADC_TRIGGER,
-                               &trigger_config);
-}
-
-
-/* --------------------------------------------------------------------------
- * Read one ADC conversion
- * -------------------------------------------------------------------------- */
-static uint16_t ADC_Read(void)
-{
-    lpadc_conv_result_t result;
-
-    LPADC_DoSoftwareTrigger(ADC0, 1U);
-
-    while (!LPADC_GetConvResult(ADC0, &result, 0U))
-    {
-    }
-
-    return (uint16_t)result.convValue;
-}
-
-
-/* --------------------------------------------------------------------------
- * Read multiple ADC samples and calculate statistics
- * -------------------------------------------------------------------------- */
-static void ADC_ReadStatistics(uint32_t *average,
-                               uint16_t *minimum,
-                               uint16_t *maximum)
-{
-    uint32_t sum = 0U;
-    uint16_t min_value = 0xFFFFU;
-    uint16_t max_value = 0U;
-
-    for (uint32_t i = 0U;
-         i < ADC_SAMPLES_PER_LEVEL;
-         i++)
-    {
-        uint16_t value = ADC_Read();
-
-        sum += value;
-
-        if (value < min_value)
-        {
-            min_value = value;
-        }
-
-        if (value > max_value)
-        {
-            max_value = value;
-        }
-
-        /*
-         * Small delay between ADC samples.
-         */
-        SDK_DelayAtLeastUs(1000U,
-                           CLOCK_GetFreq(kCLOCK_CoreSysClk));
-    }
-
-    *average = sum / ADC_SAMPLES_PER_LEVEL;
-    *minimum = min_value;
-    *maximum = max_value;
-}
-
-
-/* --------------------------------------------------------------------------
- * Main
- * -------------------------------------------------------------------------- */
 int main(void)
 {
+    gpio_pin_config_t sw2_config = {kGPIO_DigitalInput, 0U};
+#if APP_BUTTON_TEST_MODE
+    gpio_pin_config_t sw3_config = {kGPIO_DigitalInput, 0U};
+    bool sw2_last;
+    bool sw3_last;
+    uint32_t heartbeat = 0U;
+#else
+    pmu_sample_window_t window;
+    uint8_t packet[PMU_PACKET_MAX_SIZE];
+    bool button_was_pressed = false;
+    bool send_request = false;
+    bool waiting_window_logged = false;
+    uint32_t heartbeat_ticks = 0U;
+    uint32_t last_completed_windows = 0U;
+    uint32_t button_press_count = 0U;
+    uint32_t packet_send_count = 0U;
+#endif
+
     BOARD_BootClockFRO12M();
+    CLOCK_EnableClock(kCLOCK_Gpio0);
     BOARD_InitPins();
     BOARD_InitDebugConsole();
+#if APP_BUTTON_TEST_MODE
+    PRINTF("\r\n[APP] Program start\r\n");
+    PRINTF("[APP] Init SW2 GPIO input...\r\n");
+#else
+    APP_PMU_LOG("\r\n[APP] Program start\r\n");
+    APP_PMU_LOG("[APP] Init SW2 GPIO input...\r\n");
+#endif
+    GPIO_PinInit(BOARD_SW2_GPIO, BOARD_SW2_GPIO_PIN, &sw2_config);
 
-    PRINTF("\r\n");
-    PRINTF("============================================\r\n");
-    PRINTF("       MCXN947 DAC -> ADC LOOPBACK TEST\r\n");
-    PRINTF("============================================\r\n");
-    PRINTF("\r\n");
+#if APP_BUTTON_TEST_MODE
+    PRINTF("[APP] Init SW3 GPIO input...\r\n");
+    GPIO_PinInit(BOARD_SW3_GPIO, BOARD_SW3_GPIO_PIN, &sw3_config);
 
-    PRINTF("ADC channel : %u\r\n", TEST_ADC_CHANNEL);
-    PRINTF("Samples     : %u per DAC level\r\n",
-           ADC_SAMPLES_PER_LEVEL);
-    PRINTF("\r\n");
+    sw2_last = APP_IsButtonPressed(BOARD_SW2_GPIO, BOARD_SW2_GPIO_PIN);
+    sw3_last = APP_IsButtonPressed(BOARD_SW3_GPIO, BOARD_SW3_GPIO_PIN);
 
-    PRINTF("Initializing DAC0...\r\n");
-    DAC_TestInit();
-    PRINTF("DAC0 initialized.\r\n");
-
-    PRINTF("Initializing ADC0...\r\n");
-    ADC_TestInit();
-    PRINTF("ADC0 initialized.\r\n");
-
-    PRINTF("\r\n");
-    PRINTF("Physical connection:\r\n");
-    PRINTF("    DAC0 J3-2  --->  ADC0_A2 J8-28\r\n");
-    PRINTF("    GND        --->  GND\r\n");
-    PRINTF("\r\n");
-
-    PRINTF("Starting test...\r\n");
-    PRINTF("\r\n");
+    PRINTF("[APP] BUTTON TEST MODE ENABLED\r\n");
+    PRINTF("[APP] SW2=%u SW3=%u (pressed=1, released=0)\r\n",
+           sw2_last ? 1U : 0U,
+           sw3_last ? 1U : 0U);
 
     while (1)
     {
-        for (uint32_t i = 0U;
-             i < sizeof(g_dac_test_values) /
-                 sizeof(g_dac_test_values[0]);
-             i++)
+        bool sw2_now = APP_IsButtonPressed(BOARD_SW2_GPIO, BOARD_SW2_GPIO_PIN);
+        bool sw3_now = APP_IsButtonPressed(BOARD_SW3_GPIO, BOARD_SW3_GPIO_PIN);
+
+        if (sw2_now != sw2_last)
         {
-            uint16_t dac_value = g_dac_test_values[i];
-
-            uint32_t average;
-            uint16_t minimum;
-            uint16_t maximum;
-
-            /*
-             * Set DAC output.
-             */
-            DAC_SetTestValue(dac_value);
-
-            /*
-             * Allow DAC output to settle.
-             */
-            SDK_DelayAtLeastUs(DAC_SETTLE_TIME_US,
-                               CLOCK_GetFreq(kCLOCK_CoreSysClk));
-
-            /*
-             * Read ADC multiple times.
-             */
-            ADC_ReadStatistics(&average,
-                               &minimum,
-                               &maximum);
-
-            PRINTF("DAC=%4u  ADC avg=%5u  min=%5u  max=%5u\r\n",
-                   dac_value,
-                   (unsigned)average,
-                   (unsigned)minimum,
-                   (unsigned)maximum);
-
-            SDK_DelayAtLeastUs(BETWEEN_LEVELS_US,
-                               CLOCK_GetFreq(kCLOCK_CoreSysClk));
+            sw2_last = sw2_now;
+            PRINTF("[APP] SW2 change -> %u\r\n", sw2_now ? 1U : 0U);
         }
 
-        PRINTF("\r\n");
+        if (sw3_now != sw3_last)
+        {
+            sw3_last = sw3_now;
+            PRINTF("[APP] SW3 change -> %u\r\n", sw3_now ? 1U : 0U);
+        }
+
+        heartbeat++;
+        if (heartbeat >= 200U)
+        {
+            heartbeat = 0U;
+            PRINTF("[APP] heartbeat SW2=%u SW3=%u\r\n",
+                   sw2_now ? 1U : 0U,
+                   sw3_now ? 1U : 0U);
+        }
+
+        SDK_DelayAtLeastUs(5000U, CLOCK_GetFreq(kCLOCK_CoreSysClk));
     }
+
+#else
+    APP_PMU_LOG("[PMU] Init acquisition...\r\n");
+    PMU_AcquisitionInit();
+    APP_PMU_LOG("[PMU] Acquisition init done. Press SW2 to request one packet.\r\n");
+
+    while (1)
+    {
+        bool button_pressed = APP_IsButtonPressed(BOARD_SW2_GPIO, BOARD_SW2_GPIO_PIN);
+        uint32_t completed_windows = PMU_AcquisitionCompletedWindowCount();
+
+        if (completed_windows != last_completed_windows)
+        {
+            APP_PMU_LOG("[PMU] DMA windows completed=%u\r\n", (unsigned int)completed_windows);
+            last_completed_windows = completed_windows;
+        }
+
+        if (button_pressed && !button_was_pressed)
+        {
+            button_press_count++;
+            send_request = true;
+            waiting_window_logged = false;
+                 APP_PMU_LOG("[PMU] SW2 press detected. press_count=%u completed_windows=%u\r\n",
+                   (unsigned int)button_press_count,
+                   (unsigned int)completed_windows);
+        }
+        button_was_pressed = button_pressed;
+
+        if (send_request && !waiting_window_logged)
+        {
+            waiting_window_logged = true;
+            APP_PMU_LOG("[PMU] Waiting for next window...\r\n");
+        }
+
+        if (send_request && PMU_AcquisitionTakeWindow(&window))
+        {
+            size_t index;
+            size_t packet_size = PMU_EncodeSamplePacket(packet, sizeof(packet), &window);
+
+            APP_PMU_LOG("[PMU] Window acquired. seq=%u first_sample=%u timestamp_us=%u\r\n",
+                   (unsigned int)window.sequence,
+                   (unsigned int)window.first_sample_index,
+                   (unsigned int)window.timestamp_us);
+
+            if (packet_size > 0U)
+            {
+                APP_PMU_LOG("[PMU] Sending packet bytes=%u\r\n", (unsigned int)packet_size);
+                for (index = 0U; index < packet_size; index++)
+                {
+                    (void)PUTCHAR((int)packet[index]);
+                }
+                send_request = false;
+                packet_send_count++;
+                APP_PMU_LOG("\r\n[PMU] Packet send complete. sent_count=%u\r\n", (unsigned int)packet_send_count);
+            }
+            else
+            {
+                APP_PMU_LOG("[PMU] Packet encode failed (size=0).\r\n");
+            }
+        }
+
+        heartbeat_ticks++;
+        if (heartbeat_ticks >= 1000U)
+        {
+            heartbeat_ticks = 0U;
+                 APP_PMU_LOG("[PMU] heartbeat: completed=%u send_request=%u button=%u\r\n",
+                   (unsigned int)PMU_AcquisitionCompletedWindowCount(),
+                   send_request ? 1U : 0U,
+                   button_pressed ? 1U : 0U);
+        }
+
+        SDK_DelayAtLeastUs(1000U, CLOCK_GetFreq(kCLOCK_CoreSysClk));
+    }
+#endif
 }

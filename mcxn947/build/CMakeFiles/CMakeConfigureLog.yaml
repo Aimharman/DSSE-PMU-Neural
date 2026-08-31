@@ -8,7 +8,7 @@ events:
       - "CMakeLists.txt:17 (ENABLE_LANGUAGE)"
     message: |
       The target system is: Generic -  - arm
-      The host system is: Linux - 7.0.0-30-generic - x86_64
+      The host system is: Linux - 6.14.0-37-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -72,7 +72,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
       
       The C compiler identification is GNU, found in:
-        /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.o
+        /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.o
       
   -
     kind: "message-v1"
@@ -124,6 +124,6 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
       
       The CXX compiler identification is GNU, found in:
-        /home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
+        /media/ankesh/100_os/home/ankesh/Documents/IIT_Jammu/project_folder/DSSE-PMU-Neural/mcxn947/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
       
 ...
